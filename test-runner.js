@@ -6,6 +6,7 @@ const exec = util.promisify(require('child_process').exec);
 const fs = require('fs');
 
 var args = process.argv.splice(process.execArgv.length + 2);
+var testName = args[0];
 
 runTest()
     .then(() => {

@@ -15,7 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --silent",
-    "test-silent": "jest --silent",
+    "testsilent": "jest --silent",
     "eject": "react-scripts eject"
   },
   "devDependencies": {

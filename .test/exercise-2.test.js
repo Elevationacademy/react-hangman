@@ -12,21 +12,10 @@ import { wrap } from 'module';
 
 configure({ adapter: new Adapter() });
 
-// expect.extend({
-//     toEqualWithMessage(received, validator, message) {
-//         if (validator.received == )
-//     }
-// })
-
 it('Application should render without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
-});
-
-it('App should have one Letters component in root', () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.find(Letters)).toHaveLength(2); // there must be exactly one Letters component
 });
 
 it('App should have one Letter component under Letters', () => {
