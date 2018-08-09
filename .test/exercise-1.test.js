@@ -20,5 +20,5 @@ it('Application should render without crashing', () => {
 
 it('App should have one Letters component in root', () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.find(Letters)).toHaveLength(1); // there must be exactly one Letters component
+    expect(wrapper.find(Letters)).toHaveLength(2); // there must be exactly one Letters component
 });
