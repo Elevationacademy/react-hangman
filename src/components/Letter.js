@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 class Letter extends Component {
   render() {
     return (
-    <div>A</div>  
+    <div>{this.props.letter}</div>  
     );
   }
 }
 
 export default Letter;
+  

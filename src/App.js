@@ -6,14 +6,39 @@ import Letter from './components/Letter';
 import Score from './components/Score';
 
 class App extends Component {
+
+  constructor() {
+    super()
+    this.state = {
+      letterStatus: this.generateLetterStatuses(),
+      score: 100
+    }
+  }
+
+  generateLetterStatuses() {
+    let letterStatus = {};
+    for (let i = 65; i < 91; i++) {
+        letterStatus[String.fromCharCode(i)] = false;
+    }
+    return letterStatus;
+}
+
   render() {
     return (
       <div>
         <Score />
-        <Letters />
+        <Letters letterStatus={this.state.letterStatus} />
+        <button onClick={this.deleteLetter}>Remove First</button>
       </div>
       
     );
+  }
+
+  deleteLetter = () => {
+    let letterStatus = this.state.letterStatus;
+    const letters = Object.keys(letterStatus);
+    delete letterStatus[letters[0]];
+    this.setState({ letterStatus: letterStatus });
   }
 }
 

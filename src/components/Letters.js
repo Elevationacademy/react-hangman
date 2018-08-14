@@ -5,17 +5,19 @@ import Letter from './Letter';
 class Letters extends Component {
   render() {
     return (
-      <Letter></Letter>
+      <div>
+        <div>Available Letters</div>
+        { this.generateLetterTags(this.props.letterStatus) }
+      </div>
     );
   }
 
-  generateLetterStatuses() {
-      let letterStatus = {};
-      for (let i = 65; i < 91; i++) {
-          letterStatus[String.fromCharCode(i)] = false;
-      }
-      return letterStatus;
-  }
+  generateLetterTags(letterStatus){
+    return Object.keys(letterStatus).map(l => {
+        return (<Letter key={l} letter={l} />)
+    })
+}
+
 }
 
 export default Letters;
