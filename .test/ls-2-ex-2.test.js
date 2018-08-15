@@ -50,7 +50,7 @@ it('Solution component should render the hint inside a div', () => {
     const hintText = "testhint123";
     const wrapper = mount(<Solution />);
     wrapper.setState({ hint: hintText });
-    let hintDiv = wrapper.find('div');
+    let hintDiv = wrapper.find('.hint');
     expect(hintDiv).toHaveLength(1);
     expect(hintDiv.text()).toEqual(hintText);
 })

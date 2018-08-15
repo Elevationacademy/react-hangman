@@ -13,7 +13,8 @@ class Solution extends Component {
   render() {
     return (
       <div>
-        {this.state.hint}
+        <div className="hint">{this.state.hint}</div>
+        
         {/* Exercise 3 goes inside the following div */}
         <div className="word">{this.generateLettersDisplay(this.state.word)}</div>
       </div>
