@@ -18,7 +18,15 @@ it('Application should render without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('App should have one Letters component in root', () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.find(Letters)).toHaveLength(1); // there must be exactly one Letters component
+it('Score component should have a "score" property', () => {
+    const wrapper = mount(<App />);
+    expect(wrapper.find(Score).props().score).toBeDefined();
 });
+
+it('Score component should take value from app.js state', () => {
+    const wrapper = mount(<App />);
+    wrapper.setState({ score: 200 });
+    wrapper.update();
+    expect(wrapper.find(Score).props().score).toEqual(200);
+});
+

@@ -6,7 +6,6 @@ class Letters extends Component {
   render() {
     return (
       <div>
-        <div>Available Letters</div>
         { this.generateLetterTags(this.props.letterStatus) }
       </div>
     );

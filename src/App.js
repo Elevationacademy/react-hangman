@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Letters from './components/Letters';
 import Letter from './components/Letter';
 import Score from './components/Score';
+import Solution from './components/Solution';
 
 class App extends Component {
 
@@ -26,9 +27,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Score />
+        <Score score={this.state.score} />
+        <Solution letterStatus={this.state.letterStatus} />
         <Letters letterStatus={this.state.letterStatus} />
         <button onClick={this.deleteLetter}>Remove First</button>
+        {/* Placeholder for Exercise 4  */}
+        <button id="dummyButton" onClick={this.reduceScore}></button>
       </div>
       
     );
@@ -39,6 +43,12 @@ class App extends Component {
     const letters = Object.keys(letterStatus);
     delete letterStatus[letters[0]];
     this.setState({ letterStatus: letterStatus });
+  }
+
+  reduceScore = () => {
+    let currentScore = this.state.score - 10;
+    this.setState({ score: currentScore});
+    console.log("the new score is: " + this.state.score);
   }
 }
 

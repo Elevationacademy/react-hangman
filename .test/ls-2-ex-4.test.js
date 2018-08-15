@@ -5,6 +5,7 @@ import App from '../src/App';
 import Letters from '../src/components/Letters';
 import Letter from '../src/components/Letter';
 import Score from '../src/components/Score';
+import Solution from '../src/components/Solution';
 import renderer from 'react-test-renderer';
 import { mount, render, shallow, configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
@@ -18,7 +19,11 @@ it('Application should render without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('App should have one Letters component in root', () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.find(Letters)).toHaveLength(1); // there must be exactly one Letters component
+it('Clicking the reduce store button should reduce score by 10', () => {
+    const wrapper = mount(<App />);
+    wrapper.setState({ score: 100 });
+    wrapper.update();
+    wrapper.find('#dummyButton').simulate('click');
+    expect(wrapper.state('score')).toEqual(90);
 });
+
