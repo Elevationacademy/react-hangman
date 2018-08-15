@@ -48,7 +48,6 @@ class App extends Component {
   reduceScore = () => {
     let currentScore = this.state.score - 10;
     this.setState({ score: currentScore});
-    console.log("the new score is: " + this.state.score);
   }
 }
 
