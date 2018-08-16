@@ -12,3 +12,15 @@ body {
 .selected {
   text-decoration-line: line-through;
 }
+
+.high-score {
+  color: green;
+}
+
+.medium-score {
+  color: orange;
+}
+
+.low-score {
+  color: red;
+}
