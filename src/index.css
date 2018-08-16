@@ -3,3 +3,12 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.solutionLetter {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.selected {
+  text-decoration-line: line-through;
+}

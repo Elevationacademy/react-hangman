@@ -13,7 +13,11 @@ class Letters extends Component {
 
   generateLetterTags(letterStatus){
     return Object.keys(letterStatus).map(l => {
-        return (<Letter key={l} letter={l} />)
+        return (<Letter 
+          key={l} 
+          letter={l} 
+          selectLetter={this.props.selectLetter} 
+          class={letterStatus[l] ? "selected" : null } />)
     })
 }
 

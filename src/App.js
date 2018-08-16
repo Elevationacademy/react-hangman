@@ -12,7 +12,9 @@ class App extends Component {
     super()
     this.state = {
       letterStatus: this.generateLetterStatuses(),
-      score: 100
+      score: 100,
+      word: 'something',
+      hint: 'pretty basic'
     }
   }
 
@@ -28,21 +30,25 @@ class App extends Component {
     return (
       <div>
         <Score score={this.state.score} />
-        <Solution letterStatus={this.state.letterStatus} />
-        <Letters letterStatus={this.state.letterStatus} />
-        <button onClick={this.deleteLetter}>Remove First</button>
-        {/* Placeholder for Exercise 4  */}
-        <button id="dummyButton" onClick={this.reduceScore}></button>
+        <Solution letterStatus={this.state.letterStatus}  word={this.state.word} hint={this.state.hint}/>
+        <Letters letterStatus={this.state.letterStatus} selectLetter={this.selectLetter} />
       </div>
       
     );
   }
 
-  deleteLetter = () => {
+
+  selectLetter = (letter) => {
     let letterStatus = this.state.letterStatus;
-    const letters = Object.keys(letterStatus);
-    delete letterStatus[letters[0]];
-    this.setState({ letterStatus: letterStatus });
+    letterStatus[letter] = true;
+    if (this.state.word.toLowerCase().indexOf(letter.toLowerCase()) > -1) {
+      this.state.score = this.state.score + 5;
+    }
+
+    else {
+      this.state.score = this.state.score - 20;
+    }
+    this.setState( { letterStatus: letterStatus });
   }
 
   reduceScore = () => {

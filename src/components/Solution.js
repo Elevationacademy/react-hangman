@@ -3,20 +3,12 @@ import Letter from './Letter';
 
 
 class Solution extends Component {
-  constructor() {
-    super();  
-    this.state = {
-        hint: "it's pretty simple",
-        word: 'something'
-      }
-  }  
   render() {
     return (
       <div>
-        <div className="hint">{this.state.hint}</div>
-        
-        {/* Exercise 3 goes inside the following div */}
-        <div className="word">{this.generateLettersDisplay(this.state.word)}</div>
+                  {/* Exercise 3 goes inside the following div */}
+        <div className="word">{this.generateLettersDisplay(this.props.word)}</div>
+        <div className="hint">{this.props.hint}</div>
       </div>
        
     );
@@ -24,7 +16,10 @@ class Solution extends Component {
 
   generateLettersDisplay(word) {
     return word.split('').map((l, i) => {
-        return <Letter key={i} letter={l}></Letter>
+        return <Letter
+         key={i} 
+         letter={this.props.letterStatus[l.toUpperCase()] ? l : '_ '}
+         class='solutionLetter'></Letter>
     });
   }
 }
