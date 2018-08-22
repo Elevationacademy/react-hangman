@@ -1,0 +1,166 @@
+[
+ {
+  "taskId": "test-3060299803",
+  "points": 1,
+  "results": [
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534690662150,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534663756689,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534261026564,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534260805085,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534260783577,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534260777434,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1533823940554,
+    "state": "pass"
+   },
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nApp should have one Letters component in root\n",
+    "timestamp": 1533823911795,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nApp should have one Letters component in root\n",
+    "timestamp": 1533820400813,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "General error. Please contact the instructor team.Error: Command failed: npm test\nPASS .test/exercise-2.test.js\n  ✓ Application should render without crashing (27ms)\n  ✓ App should have one Letter component under Letters (7ms)\n\nFAIL .test/exercise-1.test.js\n  ✓ Application should render without crashing (27ms)\n  ✕ App should have one Letters component in root (23ms)\n\n  ● App should have one Letters component in root\n\n    expect(received).toHaveLength(length)\n\n    Expected value to have length:\n      2\n    Received:\n      {\"length\": 1, Symbol(enzyme.__root__): {\"length\": 1, Symbol(enzyme.__root__): [Circular], Symbol(enzyme.__unrendered__): <App />, Symbol(enzyme.__renderer__): {\"batchedUpdates\": [Function batchedUpdates], \"getNode\": [Function getNode], \"render\": [Function render], \"simulateEvent\": [Function simulateEvent], \"unmount\": [Function unmount]}, Symbol(enzyme.__node__): {\"instance\": null, \"key\": undefined, \"nodeType\": \"host\", \"props\": {\"children\": [<Score />, <Letters />]}, \"ref\": null, \"rendered\": [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Score]}, {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], \"type\": \"div\"}, Symbol(enzyme.__nodes__): [{\"instance\": null, \"key\": undefined, \"nodeType\": \"host\", \"props\": {\"children\": [<Score />, <Letters />]}, \"ref\": null, \"rendered\": [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Score]}, {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], \"type\": \"div\"}], Symbol(enzyme.__options__): {\"adapter\": {\"options\": {\"enableComponentDidUpdateOnSetState\": true}}}}, Symbol(enzyme.__unrendered__): null, Symbol(enzyme.__renderer__): {\"batchedUpdates\": [Function batchedUpdates], \"getNode\": [Function getNode], \"render\": [Function render], \"simulateEvent\": [Function simulateEvent], \"unmount\": [Function unmount]}, Symbol(enzyme.__node__): {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}, Symbol(enzyme.__nodes__): [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], Symbol(enzyme.__options__): {\"adapter\": {\"options\": {\"enableComponentDidUpdateOnSetState\": true}}}}\n    received.length:\n      1\n\n      21 | it('App should have one Letters component in root', () => {\n      22 |     const wrapper = shallow(<App />);\n    > 23 |     expect(wrapper.find(Letters)).toHaveLength(2); // there must be exactly one Letters component\n         |                                   ^\n      24 | });\n\n      at Object.<anonymous> (.test/exercise-1.test.js:23:35)\n\nTest Suites: 1 failed, 1 passed, 2 total\nTests:       1 failed, 3 passed, 4 total\nSnapshots:   0 total\nTime:        6.581s\nnpm ERR! Test failed.  See above for more details.\n\nOops, you have a problem in there! \n",
+    "timestamp": 1533799757124,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "General error. Please contact the instructor team.Error: Command failed: npm test\nPASS .test/exercise-2.test.js\n  ✓ Application should render without crashing (27ms)\n  ✓ App should have one Letter component under Letters (7ms)\n\nFAIL .test/exercise-1.test.js\n  ✓ Application should render without crashing (28ms)\n  ✕ App should have one Letters component in root (24ms)\n\n  ● App should have one Letters component in root\n\n    expect(received).toHaveLength(length)\n\n    Expected value to have length:\n      2\n    Received:\n      {\"length\": 1, Symbol(enzyme.__root__): {\"length\": 1, Symbol(enzyme.__root__): [Circular], Symbol(enzyme.__unrendered__): <App />, Symbol(enzyme.__renderer__): {\"batchedUpdates\": [Function batchedUpdates], \"getNode\": [Function getNode], \"render\": [Function render], \"simulateEvent\": [Function simulateEvent], \"unmount\": [Function unmount]}, Symbol(enzyme.__node__): {\"instance\": null, \"key\": undefined, \"nodeType\": \"host\", \"props\": {\"children\": [<Score />, <Letters />]}, \"ref\": null, \"rendered\": [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Score]}, {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], \"type\": \"div\"}, Symbol(enzyme.__nodes__): [{\"instance\": null, \"key\": undefined, \"nodeType\": \"host\", \"props\": {\"children\": [<Score />, <Letters />]}, \"ref\": null, \"rendered\": [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Score]}, {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], \"type\": \"div\"}], Symbol(enzyme.__options__): {\"adapter\": {\"options\": {\"enableComponentDidUpdateOnSetState\": true}}}}, Symbol(enzyme.__unrendered__): null, Symbol(enzyme.__renderer__): {\"batchedUpdates\": [Function batchedUpdates], \"getNode\": [Function getNode], \"render\": [Function render], \"simulateEvent\": [Function simulateEvent], \"unmount\": [Function unmount]}, Symbol(enzyme.__node__): {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}, Symbol(enzyme.__nodes__): [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], Symbol(enzyme.__options__): {\"adapter\": {\"options\": {\"enableComponentDidUpdateOnSetState\": true}}}}\n    received.length:\n      1\n\n      21 | it('App should have one Letters component in root', () => {\n      22 |     const wrapper = shallow(<App />);\n    > 23 |     expect(wrapper.find(Letters)).toHaveLength(2); // there must be exactly one Letters component\n         |                                   ^\n      24 | });\n\n      at Object.<anonymous> (.test/exercise-1.test.js:23:35)\n\nTest Suites: 1 failed, 1 passed, 2 total\nTests:       1 failed, 3 passed, 4 total\nSnapshots:   0 total\nTime:        2.383s\nnpm ERR! Test failed.  See above for more details.\n\nOops, you have a problem in there! \n",
+    "timestamp": 1533722249469,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "General error. Please contact the instructor team.Error: Command failed: npm test\nPASS .test/exercise-2.test.js\n  ✓ Application should render without crashing (32ms)\n  ✓ App should have one Letter component under Letters (7ms)\n\nFAIL .test/exercise-1.test.js\n  ✓ Application should render without crashing (27ms)\n  ✕ App should have one Letters component in root (22ms)\n\n  ● App should have one Letters component in root\n\n    expect(received).toHaveLength(length)\n\n    Expected value to have length:\n      2\n    Received:\n      {\"length\": 1, Symbol(enzyme.__root__): {\"length\": 1, Symbol(enzyme.__root__): [Circular], Symbol(enzyme.__unrendered__): <App />, Symbol(enzyme.__renderer__): {\"batchedUpdates\": [Function batchedUpdates], \"getNode\": [Function getNode], \"render\": [Function render], \"simulateEvent\": [Function simulateEvent], \"unmount\": [Function unmount]}, Symbol(enzyme.__node__): {\"instance\": null, \"key\": undefined, \"nodeType\": \"host\", \"props\": {\"children\": [<Score />, <Letters />]}, \"ref\": null, \"rendered\": [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Score]}, {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], \"type\": \"div\"}, Symbol(enzyme.__nodes__): [{\"instance\": null, \"key\": undefined, \"nodeType\": \"host\", \"props\": {\"children\": [<Score />, <Letters />]}, \"ref\": null, \"rendered\": [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Score]}, {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], \"type\": \"div\"}], Symbol(enzyme.__options__): {\"adapter\": {\"options\": {\"enableComponentDidUpdateOnSetState\": true}}}}, Symbol(enzyme.__unrendered__): null, Symbol(enzyme.__renderer__): {\"batchedUpdates\": [Function batchedUpdates], \"getNode\": [Function getNode], \"render\": [Function render], \"simulateEvent\": [Function simulateEvent], \"unmount\": [Function unmount]}, Symbol(enzyme.__node__): {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}, Symbol(enzyme.__nodes__): [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], Symbol(enzyme.__options__): {\"adapter\": {\"options\": {\"enableComponentDidUpdateOnSetState\": true}}}}\n    received.length:\n      1\n\n      21 | it('App should have one Letters component in root', () => {\n      22 |     const wrapper = shallow(<App />);\n    > 23 |     expect(wrapper.find(Letters)).toHaveLength(2); // there must be exactly one Letters component\n         |                                   ^\n      24 | });\n\n      at Object.<anonymous> (.test/exercise-1.test.js:23:35)\n\nTest Suites: 1 failed, 1 passed, 2 total\nTests:       1 failed, 3 passed, 4 total\nSnapshots:   0 total\nTime:        3.099s, estimated 5s\nnpm ERR! Test failed.  See above for more details.\n\nOops, you have a problem in there! \n",
+    "timestamp": 1533722027880,
+    "state": "fail"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1533721880675,
+    "state": "pass"
+   },
+   {
+    "code": 1,
+    "output": "module.js:549\n    throw err;\n    ^\n\nError: Cannot find module 'jest-cli'\n    at Function.Module._resolveFilename (module.js:547:15)\n    at Function.Module._load (module.js:474:25)\n    at Module.require (module.js:596:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (/home/codio/workspace/test-runner.js:2:12)\n    at Module._compile (module.js:652:30)\n    at Object.Module._extensions..js (module.js:663:10)\n    at Module.load (module.js:565:32)\n    at tryModuleLoad (module.js:505:12)\n    at Function.Module._load (module.js:497:3)",
+    "timestamp": 1533721757660,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "module.js:549\n    throw err;\n    ^\n\nError: Cannot find module 'jest-cli'\n    at Function.Module._resolveFilename (module.js:547:15)\n    at Function.Module._load (module.js:474:25)\n    at Module.require (module.js:596:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (/home/codio/workspace/test-runner.js:2:12)\n    at Module._compile (module.js:652:30)\n    at Object.Module._extensions..js (module.js:663:10)\n    at Module.load (module.js:565:32)\n    at tryModuleLoad (module.js:505:12)\n    at Function.Module._load (module.js:497:3)",
+    "timestamp": 1533721754495,
+    "state": "fail"
+   }
+  ]
+ },
+ {
+  "taskId": "test-3401134569",
+  "points": 1,
+  "results": [
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534261085291,
+    "state": "pass"
+   },
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nApp should have one Letter component under Letters\n",
+    "timestamp": 1534261057190,
+    "state": "fail"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1533820409176,
+    "state": "pass"
+   },
+   {
+    "code": 1,
+    "output": "General error. Please contact the instructor team.Error: Command failed: npm test\nPASS .test/exercise-2.test.js\n  ✓ Application should render without crashing (27ms)\n  ✓ App should have one Letter component under Letters (7ms)\n\nFAIL .test/exercise-1.test.js\n  ✓ Application should render without crashing (27ms)\n  ✕ App should have one Letters component in root (23ms)\n\n  ● App should have one Letters component in root\n\n    expect(received).toHaveLength(length)\n\n    Expected value to have length:\n      2\n    Received:\n      {\"length\": 1, Symbol(enzyme.__root__): {\"length\": 1, Symbol(enzyme.__root__): [Circular], Symbol(enzyme.__unrendered__): <App />, Symbol(enzyme.__renderer__): {\"batchedUpdates\": [Function batchedUpdates], \"getNode\": [Function getNode], \"render\": [Function render], \"simulateEvent\": [Function simulateEvent], \"unmount\": [Function unmount]}, Symbol(enzyme.__node__): {\"instance\": null, \"key\": undefined, \"nodeType\": \"host\", \"props\": {\"children\": [<Score />, <Letters />]}, \"ref\": null, \"rendered\": [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Score]}, {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], \"type\": \"div\"}, Symbol(enzyme.__nodes__): [{\"instance\": null, \"key\": undefined, \"nodeType\": \"host\", \"props\": {\"children\": [<Score />, <Letters />]}, \"ref\": null, \"rendered\": [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Score]}, {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], \"type\": \"div\"}], Symbol(enzyme.__options__): {\"adapter\": {\"options\": {\"enableComponentDidUpdateOnSetState\": true}}}}, Symbol(enzyme.__unrendered__): null, Symbol(enzyme.__renderer__): {\"batchedUpdates\": [Function batchedUpdates], \"getNode\": [Function getNode], \"render\": [Function render], \"simulateEvent\": [Function simulateEvent], \"unmount\": [Function unmount]}, Symbol(enzyme.__node__): {\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}, Symbol(enzyme.__nodes__): [{\"instance\": null, \"key\": undefined, \"nodeType\": \"class\", \"props\": {}, \"ref\": null, \"rendered\": null, \"type\": [Function Letters]}], Symbol(enzyme.__options__): {\"adapter\": {\"options\": {\"enableComponentDidUpdateOnSetState\": true}}}}\n    received.length:\n      1\n\n      21 | it('App should have one Letters component in root', () => {\n      22 |     const wrapper = shallow(<App />);\n    > 23 |     expect(wrapper.find(Letters)).toHaveLength(2); // there must be exactly one Letters component\n         |                                   ^\n      24 | });\n\n      at Object.<anonymous> (.test/exercise-1.test.js:23:35)\n\nTest Suites: 1 failed, 1 passed, 2 total\nTests:       1 failed, 3 passed, 4 total\nSnapshots:   0 total\nTime:        2.358s, estimated 4s\nnpm ERR! Test failed.  See above for more details.\n\nOops, you have a problem in there! \n",
+    "timestamp": 1533799764964,
+    "state": "fail"
+   }
+  ]
+ },
+ {
+  "taskId": "multiple-choice-3477788579",
+  "points": 1,
+  "state": {
+   "active": "deab9369-1574-2643-6d07-ea7d4387718b"
+  },
+  "results": [
+   {
+    "current": [
+     "deab9369-1574-2643-6d07-ea7d4387718b"
+    ],
+    "right": [
+     "deab9369-1574-2643-6d07-ea7d4387718b"
+    ],
+    "timestamp": 1534776319481,
+    "state": "pass"
+   }
+  ]
+ },
+ {
+  "taskId": "multiple-choice-2425955338",
+  "points": 0,
+  "state": {
+   "active": "8c29aea8-d753-a93c-ec73-d19c5c5717e0"
+  },
+  "results": [
+   {
+    "current": [
+     "8c29aea8-d753-a93c-ec73-d19c5c5717e0"
+    ],
+    "right": [
+     "c636ae06-0935-715c-8742-0da0e9eaa697"
+    ],
+    "timestamp": 1534776329447,
+    "state": "fail"
+   }
+  ]
+ }
+]

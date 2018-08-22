@@ -1,0 +1,116 @@
+[
+ {
+  "type": "test",
+  "taskId": "test-3060299803",
+  "source": {
+   "name": "Exercise 1",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "arePartialPointsAllowed": false,
+   "oneTimeTest": false,
+   "instructions": "Create a Score component. It should also be a child of App (like Letters is), and for now should just display a number.",
+   "command": "node test-runner exercise-1",
+   "learningObjectives": "",
+   "points": 1,
+   "timeoutSeconds": 40
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3401134569",
+  "source": {
+   "name": "Exercise 2",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "arePartialPointsAllowed": false,
+   "oneTimeTest": false,
+   "instructions": "Now, create a Letter (singular) component (still in the components directory), and add it inside the Letters component's render function.",
+   "command": "node test-runner exercise-2",
+   "learningObjectives": "",
+   "points": 1,
+   "timeoutSeconds": 40
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3477788579",
+  "source": {
+   "name": "React Components",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "showExpectedAnswer": true,
+   "instructions": "What is the main purpose of React Components?",
+   "points": "999",
+   "incorrectPoints": "0",
+   "multipleResponse": false,
+   "learningObjectives": "",
+   "answers": [
+    {
+     "_id": "deab9369-1574-2643-6d07-ea7d4387718b",
+     "correct": true,
+     "answer": "The correct answer"
+    },
+    {
+     "_id": "8cc2545f-46ce-2786-9772-c5d8233d782f",
+     "correct": false,
+     "answer": "First incorrect answer"
+    },
+    {
+     "_id": "dbc65cee-a54b-d1e6-e943-a1e17c0c79c1",
+     "correct": false,
+     "answer": "Second incorrect answer"
+    },
+    {
+     "_id": "2111d3cf-968d-eca8-56d6-1f982a7d3aee",
+     "correct": false,
+     "answer": "Third incorrect answer"
+    }
+   ]
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2425955338",
+  "source": {
+   "name": "Properties",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "showExpectedAnswer": true,
+   "instructions": "What are Props in React?",
+   "points": "999",
+   "incorrectPoints": "1",
+   "multipleResponse": false,
+   "learningObjectives": "",
+   "answers": [
+    {
+     "_id": "8c29aea8-d753-a93c-ec73-d19c5c5717e0",
+     "correct": false,
+     "answer": "Incorrect answer number 1"
+    },
+    {
+     "_id": "c636ae06-0935-715c-8742-0da0e9eaa697",
+     "correct": true,
+     "answer": "Correct answer"
+    },
+    {
+     "_id": "99e77bab-fe38-bf62-7f63-6f3795f16b2a",
+     "correct": false,
+     "answer": "Incorrect answer number 2"
+    },
+    {
+     "_id": "c8ea1b1e-e3fa-3671-cf65-b36627533ff2",
+     "correct": false,
+     "answer": "Incorrect answer number 3"
+    }
+   ]
+  }
+ }
+]
