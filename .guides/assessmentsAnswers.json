@@ -1,0 +1,104 @@
+[
+ {
+  "taskId": "test-745750708",
+  "points": 0,
+  "results": [
+   {
+    "code": 1,
+    "output": "/home/codio/workspace/test-runner.js:5\nconst exec = util.promisify(require('child_process').exec);\n                  ^\n\nTypeError: util.promisify is not a function\n    at Object.<anonymous> (/home/codio/workspace/test-runner.js:5:19)\n    at Module._compile (module.js:577:32)\n    at Object.Module._extensions..js (module.js:586:10)\n    at Module.load (module.js:494:32)\n    at tryModuleLoad (module.js:453:12)\n    at Function.Module._load (module.js:445:3)\n    at Module.runMain (module.js:611:10)\n    at run (bootstrap_node.js:394:7)\n    at startup (bootstrap_node.js:160:9)\n    at bootstrap_node.js:507:3",
+    "timestamp": 1534690621521,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "/home/codio/workspace/test-runner.js:5\nconst exec = util.promisify(require('child_process').exec);\n                  ^\n\nTypeError: util.promisify is not a function\n    at Object.<anonymous> (/home/codio/workspace/test-runner.js:5:19)\n    at Module._compile (module.js:577:32)\n    at Object.Module._extensions..js (module.js:586:10)\n    at Module.load (module.js:494:32)\n    at tryModuleLoad (module.js:453:12)\n    at Function.Module._load (module.js:445:3)\n    at Module.runMain (module.js:611:10)\n    at run (bootstrap_node.js:394:7)\n    at startup (bootstrap_node.js:160:9)\n    at bootstrap_node.js:507:3",
+    "timestamp": 1534690084594,
+    "state": "fail"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534336281368,
+    "state": "pass"
+   },
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nScore component should have a \"score\" property\n",
+    "timestamp": 1534336261066,
+    "state": "fail"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534335713922,
+    "state": "pass"
+   },
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nScore component should have a \"score\" property\n",
+    "timestamp": 1534335695884,
+    "state": "fail"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534335665827,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534331445174,
+    "state": "pass"
+   },
+   {
+    "code": 1,
+    "output": "module.js:549\n    throw err;\n    ^\n\nError: Cannot find module 'jest-cli'\n    at Function.Module._resolveFilename (module.js:547:15)\n    at Function.Module._load (module.js:474:25)\n    at Module.require (module.js:596:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (/home/codio/workspace/test-runner.js:2:12)\n    at Module._compile (module.js:652:30)\n    at Object.Module._extensions..js (module.js:663:10)\n    at Module.load (module.js:565:32)\n    at tryModuleLoad (module.js:505:12)\n    at Function.Module._load (module.js:497:3)",
+    "timestamp": 1534331377078,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "module.js:549\n    throw err;\n    ^\n\nError: Cannot find module 'jest-cli'\n    at Function.Module._resolveFilename (module.js:547:15)\n    at Function.Module._load (module.js:474:25)\n    at Module.require (module.js:596:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (/home/codio/workspace/test-runner.js:2:12)\n    at Module._compile (module.js:652:30)\n    at Object.Module._extensions..js (module.js:663:10)\n    at Module.load (module.js:565:32)\n    at tryModuleLoad (module.js:505:12)\n    at Function.Module._load (module.js:497:3)",
+    "timestamp": 1534331374491,
+    "state": "fail"
+   }
+  ]
+ },
+ {
+  "taskId": "test-2297084525",
+  "points": 1,
+  "results": [
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534331454097,
+    "state": "pass"
+   }
+  ]
+ },
+ {
+  "taskId": "test-1184568189",
+  "points": 1,
+  "results": [
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534331460595,
+    "state": "pass"
+   }
+  ]
+ },
+ {
+  "taskId": "test-928620327",
+  "points": 1,
+  "results": [
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1534331467700,
+    "state": "pass"
+   }
+  ]
+ }
+]

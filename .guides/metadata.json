@@ -1,0 +1,49 @@
+{
+ "sections": [
+  {
+   "id": "34e31df1-8245-bc1a-ef37-a30d14b4706c",
+   "title": "React Props, State & Data Flow",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/React-Props--State---Data-Flow-34e3.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "56948448-1258-367d-cdfa-8eccf4447413",
+   "title": "Quiz",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Quiz-5694.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "5442e315-4597-a75d-0ae6-7eb911232dce",
+   "title": "Exercises",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Exercises-5442.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  }
+ ],
+ "theme": "light",
+ "scripts": [],
+ "lexikonTopic": "",
+ "suppressPageNumbering": false,
+ "useSubmitButtons": true,
+ "useMarkAsComplete": true,
+ "hideMenu": false,
+ "allowGuideClose": false,
+ "collapsedOnStart": false
+}
