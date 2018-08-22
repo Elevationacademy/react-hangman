@@ -18,15 +18,24 @@ it('Application should render without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('Score component should have a "score" property', () => {
+
+it('The game should display a Congratulations div with the class "success-message" only if the word is guessed correctly', () => {
+    const word = "hey";
+    const correctLetters = ['h', 'e', 'y'];
     const wrapper = mount(<App />);
-    expect(wrapper.find(Score).props().score).toBeDefined();
+    expect(wrapper.find(".success-message")).toHaveLength(0);
+    wrapper.setState({ word: hey });
+    wrapper.update();
+    let allLetters = wrapper.find(Letters).find("span");
+    allLetters.forEach((l) => {
+        if (correctLetters.indexOf(l.text()) > -1) {
+            l.simulate('click');
+        }
+    });
+    expect(wrapper.find('.success-message')).toHaveLength(1);
 });
 
-it('Score component should take value from app.js state', () => {
-    const wrapper = mount(<App />);
-    wrapper.setState({ score: 200 });
-    wrapper.update();
-    expect(wrapper.find(Score).props().score).toEqual(200);
+it('The game should display a Game Over div with the class "game-over" if the Score is below 0', () => {
+
 });
 

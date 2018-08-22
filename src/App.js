@@ -12,9 +12,11 @@ class App extends Component {
     super()
     this.state = {
       letterStatus: this.generateLetterStatuses(),
-      score: 100,
+      score: 30,
       word: 'something',
-      hint: 'pretty basic'
+      hint: 'pretty basic',
+      isOver: false,
+      isLost: false
     }
   }
 
@@ -27,14 +29,34 @@ class App extends Component {
 }
 
   render() {
-    return (
-      <div>
-        <Score score={this.state.score} />
-        <Solution letterStatus={this.state.letterStatus}  word={this.state.word} hint={this.state.hint}/>
-        <Letters letterStatus={this.state.letterStatus} selectLetter={this.selectLetter} />
-      </div>
+      if (!this.state.isOver) {
+        return (
+          <div>
+            <Score score={this.state.score} />
+            <Solution letterStatus={this.state.letterStatus}  word={this.state.word} hint={this.state.hint}/>
+            <Letters letterStatus={this.state.letterStatus} selectLetter={this.selectLetter} />
+        </div>
+      )
+      }
+
+      else {
+        if (this.state.isLost) {
+          return (<div class="game-over">Game Over, Bye</div>);
+        }
+        else {
+          return (<div class="success-message">Nice work dude!</div>);
+        }
+      }
       
-    );
+  }
+
+  checkGameStatus() {
+    if (this.state.word.split('').every((l) => this.state.letterStatus[l.toUpperCase()])) {
+      this.setState({ isOver: true });
+    }
+    else if(this.state.score < 0) {
+      this.setState({ isOver: true, isLost: true });
+    }
   }
 
 
@@ -42,13 +64,15 @@ class App extends Component {
     let letterStatus = this.state.letterStatus;
     letterStatus[letter] = true;
     if (this.state.word.toLowerCase().indexOf(letter.toLowerCase()) > -1) {
-      this.state.score = this.state.score + 5;
+      this.setState({ score: this.state.score + 5});
     }
 
     else {
-      this.state.score = this.state.score - 20;
+      this.setState({ score: this.state.score - 20});
     }
+
     this.setState( { letterStatus: letterStatus });
+    this.checkGameStatus();
   }
 
   reduceScore = () => {
