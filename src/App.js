@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   deleteLetter = () => {
-    let letterStatus = this.state.letterStatus
+    let letterStatus = {...this.state.letterStatus}
     const letters = Object.keys(letterStatus)
     delete letterStatus[letters[0]]
 
