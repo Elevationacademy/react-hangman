@@ -16,7 +16,10 @@ class App extends Component {
       word: 'something',
       hint: 'pretty basic',
       isOver: false,
-      isLost: false
+      isLost: false,
+      allWords: ['something', 'some other thing', 'third thing', 'etc'],
+      allHints: ['sdsd', 'asdad22222', '1231231231', '1sdsdsdsd'],
+      index: 0
     }
   }
 
@@ -35,19 +38,25 @@ class App extends Component {
             <Score score={this.state.score} />
             <Solution letterStatus={this.state.letterStatus}  word={this.state.word} hint={this.state.hint}/>
             <Letters letterStatus={this.state.letterStatus} selectLetter={this.selectLetter} />
+            <button className="restart-game" onClick={this.restartGame}>Restart Game</button>
         </div>
       )
       }
 
       else {
         if (this.state.isLost) {
-          return (<div class="game-over">Game Over, Bye</div>);
+          return (<div className="game-over">Game Over, Bye</div>);
         }
         else {
-          return (<div class="success-message">Nice work dude!</div>);
+          return (<div className="success-message">Nice work dude!</div>);
         }
       }
       
+  }
+
+  restartGame = () => {
+    let currentIndex = this.state.index + 1;
+    this.setState({ index: currentIndex, word: this.state.allWords[currentIndex], hint: this.state.allHints[currentIndex] });
   }
 
   checkGameStatus() {
@@ -77,7 +86,11 @@ class App extends Component {
 
   reduceScore = () => {
     let currentScore = this.state.score - 10;
-    this.setState({ score: currentScore});
+    let isOver = false;
+    if (currentScore <= 0) {
+      isOver = true;
+    }
+    this.setState({ score: currentScore, isOver: isOver});
   }
 }
 

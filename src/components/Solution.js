@@ -19,7 +19,7 @@ class Solution extends Component {
         return <Letter
          key={i} 
          letter={this.props.letterStatus[l.toUpperCase()] ? l : '_ '}
-         class='solutionLetter'></Letter>
+         className='solutionLetter'></Letter>
     });
   }
 }

@@ -17,7 +17,7 @@ class Letters extends Component {
           key={l} 
           letter={l} 
           selectLetter={this.props.selectLetter} 
-          class={letterStatus[l] ? "selected" : null } />)
+          className={letterStatus[l] ? "selected" : null } />)
     })
 }
 

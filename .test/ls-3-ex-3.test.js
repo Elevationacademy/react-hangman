@@ -24,18 +24,30 @@ it('The game should display a Congratulations div with the class "success-messag
     const correctLetters = ['h', 'e', 'y'];
     const wrapper = mount(<App />);
     expect(wrapper.find(".success-message")).toHaveLength(0);
-    wrapper.setState({ word: hey });
+    wrapper.setState({ word: word });
     wrapper.update();
     let allLetters = wrapper.find(Letters).find("span");
     allLetters.forEach((l) => {
-        if (correctLetters.indexOf(l.text()) > -1) {
+        if (correctLetters.indexOf(l.text().toLowerCase()) > -1) {
             l.simulate('click');
         }
     });
     expect(wrapper.find('.success-message')).toHaveLength(1);
 });
 
+// TODO: Check about -10 bug
 it('The game should display a Game Over div with the class "game-over" if the Score is below 0', () => {
-
+    const word = "hey";
+    const incorrectLetters = ['a', 'b', 'c', 'd'];
+    const wrapper = mount(<App />);
+    expect(wrapper.find(".error-message")).toHaveLength(0);
+    wrapper.setState({ word: word });
+    wrapper.update();
+    let allLetters = wrapper.find(Letters).find("span");
+    incorrectLetters.forEach((l) => {
+       let currentLetter = allLetters.filterWhere((al) => al.text().toLowerCase() == l); 
+       currentLetter.simulate('click');
+    });
+    expect(wrapper.find('.game-over')).toHaveLength(1);
 });
 
