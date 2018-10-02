@@ -1,0 +1,50 @@
+[
+ {
+  "taskId": "test-459438340",
+  "points": 1,
+  "results": [
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1538489288800,
+    "state": "pass"
+   }
+  ]
+ },
+ {
+  "taskId": "test-3049227058",
+  "points": 1,
+  "results": [
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1538489295189,
+    "state": "pass"
+   }
+  ]
+ },
+ {
+  "taskId": "test-614017462",
+  "points": 1,
+  "results": [
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1538489301631,
+    "state": "pass"
+   }
+  ]
+ },
+ {
+  "taskId": "test-1992838754",
+  "points": 1,
+  "results": [
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1538489309590,
+    "state": "pass"
+   }
+  ]
+ }
+]

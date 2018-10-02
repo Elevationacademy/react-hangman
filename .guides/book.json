@@ -1,0 +1,23 @@
+{
+ "name": "React Events",
+ "children": [
+  {
+   "title": "React Events",
+   "id": "46b26db3-579d-071c-a0d4-e7b5e65dce65",
+   "pageId": "46b26db3-579d-071c-a0d4-e7b5e65dce65",
+   "type": "page"
+  },
+  {
+   "title": "Quiz",
+   "id": "86ba9e99-ad27-20d8-b412-7269632c3d41",
+   "pageId": "86ba9e99-ad27-20d8-b412-7269632c3d41",
+   "type": "page"
+  },
+  {
+   "id": "db14e7f1-6f91-cc35-f0f9-e38d891dc26e",
+   "title": "Exercises",
+   "pageId": "3baa1a12-77c6-2ac8-ecee-478305f606d5",
+   "type": "page"
+  }
+ ]
+}

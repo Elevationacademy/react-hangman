@@ -45,7 +45,7 @@ class App extends Component {
 
       else {
         if (this.state.isLost) {
-          return (<div className="game-over">Game Over, Bye</div>);
+          return (<div className="game-over">Game Over, Bye!</div>);
         }
         else {
           return (<div className="success-message">Nice work dude!</div>);

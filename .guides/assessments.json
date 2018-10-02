@@ -1,0 +1,103 @@
+[
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1682566459",
+  "source": {
+   "name": "Question 1",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "showExpectedAnswer": true,
+   "instructions": "What is love?",
+   "points": "999",
+   "incorrectPoints": "0",
+   "multipleResponse": false,
+   "learningObjectives": "",
+   "answers": [
+    {
+     "_id": "a1e34066-b961-951f-f4a5-570d204fd103",
+     "correct": true,
+     "answer": "Baby don't hurt me no more"
+    },
+    {
+     "_id": "4619ffbb-9f81-5a06-6053-83a83e5e3d82",
+     "correct": false,
+     "answer": "Is a temple"
+    }
+   ]
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-459438340",
+  "source": {
+   "name": "Exercise 1",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "arePartialPointsAllowed": false,
+   "oneTimeTest": false,
+   "instructions": "Bet you saw this coming; update the score (remember the Score component?) we made way back when to actually be functional.\n\nIn particular,\n\n*For each wrong letter a user selects, decrease the score by 20\n*For each right letter, increase the score by 5\n*Remember to only change the state using setState\n\nHint: If you recall our component tree, you'll see a problem: the secret word is inside Solution, but our score data is inside App.js's state. There are a few ways to solve this, but either way you'll probably have to do a bit of refactoring. \n\nHint 2: You'll have to get rid of the local state in Solution, and bring the word + hint up to App's own state",
+   "command": "node test-runner ls-3-ex-1",
+   "learningObjectives": "",
+   "points": 1,
+   "timeoutSeconds": 40
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3049227058",
+  "source": {
+   "name": "Exercise 2",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "arePartialPointsAllowed": false,
+   "oneTimeTest": false,
+   "instructions": "Throw some flare in there, conditionally ~\n\n*So long as the user has 80 points or more, assign the high-score class to the div with the score\n*If the user is between 50 and 80 points, assign the medium-score class\n*Below 50 points, the div should get the low-score class\n\nFeel free to decide how to style each of the classes on your own (we'd go for green-yellow-red colors, but hey, you decide!)\n\nThe only changes should be in the Score component and your CSS file.",
+   "command": "node test-runner ls-3-ex-2",
+   "learningObjectives": "",
+   "points": 1,
+   "timeoutSeconds": 40
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-614017462",
+  "source": {
+   "name": "Exercise 3",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "arePartialPointsAllowed": false,
+   "oneTimeTest": false,
+   "instructions": "End the game!\n\n*If the user reaches a score of 0, show a div with the class game-over, and display the word\n*If the user correctly guesses the word, show a div with the class success-message\n*Show the messages instead of the game div (the one that contains the Score, Letters and Solution components)",
+   "command": "node test-runner ls-3-ex-3",
+   "learningObjectives": "",
+   "points": 1,
+   "timeoutSeconds": 40
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1992838754",
+  "source": {
+   "name": "Exercise 4",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "arePartialPointsAllowed": false,
+   "oneTimeTest": false,
+   "instructions": "Restart the game!\n\nUpon ending, there should be a button that restarts the game with a new word and hint!\n\n*Words/hints that have already been used should be removed/not used again\n*The button should have the class restart-game\n\nYou shouldn't have to do anything crazy for this one. Just think about where all the information comes from, work with that, and let React do the rest.",
+   "command": "node test-runner ls-3-ex-4",
+   "learningObjectives": "",
+   "points": 1,
+   "timeoutSeconds": 40
+  }
+ }
+]
