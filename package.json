@@ -24,13 +24,16 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^23.4.2",
     "jest-expect-message": "^1.0.0",
+    "jest-transform-stub": "^1.0.0",
     "react-test-renderer": "^16.4.2"
   },
   "jest": {
     "verbose": true,
     "testURL": "http://localhost/",
     "testResultsProcessor": "./node_modules/jest-json-reporter",
-    "reporters": [],
-    "setupTestFrameworkScriptFile": "jest-expect-message"
+    "setupTestFrameworkScriptFile": "jest-expect-message",
+    "moduleNameMapper": {
+      "^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|svg)$": "jest-transform-stub"
+    }
   }
 }
