@@ -11,8 +11,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      letterStatus: this.generateLetterStatuses(),
-      score: 100
+      letterStatus: this.generateLetterStatuses()
     }
   }
 
@@ -27,12 +26,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Score score={this.state.score} />
-        <Solution letterStatus={this.state.letterStatus} />
+        <Score />
         <Letters letterStatus={this.state.letterStatus} />
         <button onClick={this.deleteLetter}>Remove First</button>
-        {/* Placeholder for Exercise 4  */}
-        <button id="dummyButton" onClick={this.reduceScore}></button>
       </div>
       
     );
@@ -43,11 +39,6 @@ class App extends Component {
     const letters = Object.keys(letterStatus);
     delete letterStatus[letters[0]];
     this.setState({ letterStatus: letterStatus });
-  }
-
-  reduceScore = () => {
-    let currentScore = this.state.score - 10;
-    this.setState({ score: currentScore});
   }
 }
 

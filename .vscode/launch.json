@@ -9,8 +9,8 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/test-runner.js",
-            "args": ["exercise-1"]
+            "program": "${workspaceFolder}/.test/test-runner.js",
+            "args": ["ex-1"]
         },
         {
             "type": "node",

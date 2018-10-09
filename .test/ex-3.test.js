@@ -19,13 +19,18 @@ it('Application should render without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
+it('Solution component should have a div with that class of .word', () => {
+  const wrapper = shallow(<Solution />);
+  expect(wrapper.find('.word')).toHaveLength(1);
+});
+
 it('Solution component should display the word from the state object', () => {
     const word = "testword234";
     const wrapper = mount(<Solution />);
     wrapper.setState({ word: word });
     wrapper.update();
     expect(wrapper.find('.word').text()).toEqual(word);
-})
+});
 
 it('Solution component should render the letters in a separate Letter component', () => {
     const word = "testword123";

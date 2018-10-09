@@ -46,12 +46,17 @@ it('Solution component state should have "word" and "hint" properties', () => {
     expect(wrapper.state('word')).toBeDefined();
 });
 
+it('Solution component should have a div with the class of .hint', () => {
+    const wrapper = shallow(<Solution />);
+    expect(wrapper.find('.hint')).toHaveLength(1);
+})
+
 it('Solution component should render the hint inside a div', () => {
     const hintText = "testhint123";
-    const wrapper = mount(<Solution />);
+    // todo: find out why this gets stuck with mount
+    const wrapper = render(<Solution />);
     wrapper.setState({ hint: hintText });
     let hintDiv = wrapper.find('.hint');
-    expect(hintDiv).toHaveLength(1);
     expect(hintDiv.text()).toEqual(hintText);
-})
+});
 
