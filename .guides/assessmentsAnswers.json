@@ -6,6 +6,18 @@
    {
     "code": 0,
     "output": "Well done!",
+    "timestamp": 1539177014314,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1539176035959,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
     "timestamp": 1538489288800,
     "state": "pass"
    }
@@ -18,6 +30,18 @@
    {
     "code": 0,
     "output": "Well done!",
+    "timestamp": 1539177022317,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1539176051235,
+    "state": "pass"
+   },
+   {
+    "code": 0,
+    "output": "Well done!",
     "timestamp": 1538489295189,
     "state": "pass"
    }
@@ -27,6 +51,12 @@
   "taskId": "test-614017462",
   "points": 1,
   "results": [
+   {
+    "code": 0,
+    "output": "Well done!",
+    "timestamp": 1539176055740,
+    "state": "pass"
+   },
    {
     "code": 0,
     "output": "Well done!",
@@ -43,6 +73,18 @@
     "code": 0,
     "output": "Well done!",
     "timestamp": 1538489309590,
+    "state": "pass"
+   }
+  ]
+ },
+ {
+  "taskId": "test-1007618148",
+  "points": 1,
+  "results": [
+   {
+    "code": 0,
+    "output": "",
+    "timestamp": 1539176907055,
     "state": "pass"
    }
   ]
