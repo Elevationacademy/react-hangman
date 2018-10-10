@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
 class Letter extends Component {
-  render() {
-    return (
-    <span>{this.props.letter}</span>  
-    );
-  }
+
+    render() {
+        return (
+            <div>a</div>
+        );
+    }
 }
 
 export default Letter;
