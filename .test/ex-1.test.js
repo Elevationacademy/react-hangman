@@ -18,7 +18,7 @@ it('Application should render without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('App should have one Letters component in root', () => {
+it('App should have one Score component in root', () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.find(Letters)).toHaveLength(2); // there must be exactly one Letters component
+    expect(wrapper.find(Score)).toHaveLength(1); // there must be exactly one Score component
 });
