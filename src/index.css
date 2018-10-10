@@ -4,23 +4,3 @@ body {
   font-family: sans-serif;
 }
 
-.solutionLetter {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.selected {
-  text-decoration-line: line-through;
-}
-
-.high-score {
-  color: green;
-}
-
-.medium-score {
-  color: orange;
-}
-
-.low-score {
-  color: red;
-}
