@@ -1,116 +1,350 @@
 [
- {
-  "type": "test",
-  "taskId": "test-3060299803",
-  "source": {
-   "name": "Exercise 1",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "arePartialPointsAllowed": false,
-   "oneTimeTest": false,
-   "instructions": "Create a Score component. It should also be a child of App (like Letters is), and for now should just display a number.",
-   "command": "node test-runner exercise-1",
-   "learningObjectives": "",
-   "points": 1,
-   "timeoutSeconds": 40
-  }
- },
- {
-  "type": "test",
-  "taskId": "test-3401134569",
-  "source": {
-   "name": "Exercise 2",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "arePartialPointsAllowed": false,
-   "oneTimeTest": false,
-   "instructions": "Now, create a Letter (singular) component (still in the components directory), and add it inside the Letters component's render function.",
-   "command": "node test-runner exercise-2",
-   "learningObjectives": "",
-   "points": 1,
-   "timeoutSeconds": 40
-  }
- },
- {
-  "type": "multiple-choice",
-  "taskId": "multiple-choice-3477788579",
-  "source": {
-   "name": "React Components",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "showExpectedAnswer": true,
-   "instructions": "What is the main purpose of React Components?",
-   "points": "999",
-   "incorrectPoints": "0",
-   "multipleResponse": false,
-   "learningObjectives": "",
-   "answers": [
     {
-     "_id": "deab9369-1574-2643-6d07-ea7d4387718b",
-     "correct": true,
-     "answer": "The correct answer"
+     "type": "test",
+     "taskId": "test-3060299803",
+     "source": {
+      "name": "Exercise 1",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "arePartialPointsAllowed": false,
+      "oneTimeTest": false,
+      "instructions": "Create a `Score` component. It should also be a child of `App` (like `Letters` is), and for now should just display a number.\n\nEventually, we will use this to show the user's score, but for now your page should look like this:\n\n![](https://s3-us-west-2.amazonaws.com/learn-app/lesson-images/react-raw-components.PNG)\n\nCouple of notes:\n\n*   Yes, we swapped the order of Letters and Score in App.js\n*   You may receive an error if you just add the Score tag above Letters\n\n*   The error should be clear, but refer to the part of the lesson about the **render** method if you can't figure it out.\n\n*   This one _can_ (and should) be a functional component",
+      "command": "node .test/test-runner ex-1",
+      "learningObjectives": "",
+      "points": 1,
+      "timeoutSeconds": 40
+     }
     },
     {
-     "_id": "8cc2545f-46ce-2786-9772-c5d8233d782f",
-     "correct": false,
-     "answer": "First incorrect answer"
+     "type": "test",
+     "taskId": "test-3401134569",
+     "source": {
+      "name": "Exercise 2",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "arePartialPointsAllowed": false,
+      "oneTimeTest": false,
+      "instructions": "Now, create a `Letter` (singular) component (still in the `components` directory), and add it inside the _`Letters`_ component's `render` function.\n\nYour page should now look exactly like the above, except with a single letter (any letter, we'll change this soon) underneath the \"Letters will be here\" text.\n\nTrue, nothing miraculous is happening just yet, but components are just the building blocks of React. They're like the HTML of a webpage; alone, they're just placeholders for content.",
+      "command": "node .test/test-runner ex-2",
+      "learningObjectives": "",
+      "points": 1,
+      "timeoutSeconds": 40
+     }
     },
     {
-     "_id": "dbc65cee-a54b-d1e6-e943-a1e17c0c79c1",
-     "correct": false,
-     "answer": "Second incorrect answer"
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-3477788579",
+     "source": {
+      "name": "React Components",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "What is the main purpose of React Components?",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "deab9369-1574-2643-6d07-ea7d4387718b",
+        "correct": true,
+        "answer": "The correct answer"
+       },
+       {
+        "_id": "8cc2545f-46ce-2786-9772-c5d8233d782f",
+        "correct": false,
+        "answer": "First incorrect answer"
+       },
+       {
+        "_id": "dbc65cee-a54b-d1e6-e943-a1e17c0c79c1",
+        "correct": false,
+        "answer": "Second incorrect answer"
+       },
+       {
+        "_id": "2111d3cf-968d-eca8-56d6-1f982a7d3aee",
+        "correct": false,
+        "answer": "Third incorrect answer"
+       }
+      ]
+     }
     },
     {
-     "_id": "2111d3cf-968d-eca8-56d6-1f982a7d3aee",
-     "correct": false,
-     "answer": "Third incorrect answer"
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-2425955338",
+     "source": {
+      "name": "Properties",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "What are Props in React?",
+      "points": "999",
+      "incorrectPoints": "1",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "8c29aea8-d753-a93c-ec73-d19c5c5717e0",
+        "correct": false,
+        "answer": "Incorrect answer number 1"
+       },
+       {
+        "_id": "c636ae06-0935-715c-8742-0da0e9eaa697",
+        "correct": true,
+        "answer": "Correct answer"
+       },
+       {
+        "_id": "99e77bab-fe38-bf62-7f63-6f3795f16b2a",
+        "correct": false,
+        "answer": "Incorrect answer number 2"
+       },
+       {
+        "_id": "c8ea1b1e-e3fa-3671-cf65-b36627533ff2",
+        "correct": false,
+        "answer": "Incorrect answer number 3"
+       }
+      ]
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-3490465077",
+     "source": {
+      "name": "Question #1",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "What is React?",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "4a1acfeb-2c60-f711-234b-c53658e0dc02",
+        "correct": false,
+        "answer": "An MVC framework to simplify creating full-stack applications"
+       },
+       {
+        "_id": "2e3855d3-d3d2-5321-831e-480ba9325fc1",
+        "correct": true,
+        "answer": "A UI library "
+       },
+       {
+        "_id": "b41d9111-dbb2-e4ab-3f4b-7f31ec967461",
+        "correct": false,
+        "answer": "A library similar to jQuery but more modern"
+       },
+       {
+        "_id": "b191dafc-0312-2136-6719-1608edb94add",
+        "correct": false,
+        "answer": "All of the above"
+       }
+      ]
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-2595591325",
+     "source": {
+      "name": "Question #2",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "React uses a ...",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "32513af1-cb1e-d7ff-dcc8-9ccfa78bed68",
+        "correct": false,
+        "answer": "Shadow DOM"
+       },
+       {
+        "_id": "e3b70140-c96a-fe8f-8943-61932dbc2e25",
+        "correct": false,
+        "answer": "Temporary DOM"
+       },
+       {
+        "_id": "6f876041-7e5c-b9fe-a548-4bca48c24963",
+        "correct": false,
+        "answer": "Pseudo DOM"
+       },
+       {
+        "_id": "5113449f-7ff2-0246-5c57-ff93ed20f679",
+        "correct": true,
+        "answer": "Virtual DOM"
+       }
+      ]
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-3943734574",
+     "source": {
+      "name": "Question #3",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "The Virtual DOM is good because:",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "61dca08f-07f1-98b0-f8f4-eec5a9b90ff2",
+        "correct": false,
+        "answer": "It has a reconciliation algorithm that parses the real DOM really fast"
+       },
+       {
+        "_id": "f210068b-56f5-ee44-53a9-192e30016007",
+        "correct": false,
+        "answer": "We only have to update the Virtual DOM, and let it update the real DOM"
+       },
+       {
+        "_id": "3d94d06a-685d-7768-b764-d5c7ba37dff6",
+        "correct": false,
+        "answer": "It is programmed to work well with new HTML5 features"
+       },
+       {
+        "_id": "2cc0695c-e1b2-c207-1108-56f3c20b2326",
+        "correct": true,
+        "answer": "It is a plain JS object which is faster to modify than the real DOM"
+       }
+      ]
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-41070384",
+     "source": {
+      "name": "Question #4",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "JSX is:",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "df69132d-fb19-faec-246e-f54dbed0c44b",
+        "correct": false,
+        "answer": "Basically HTML that we can write in JS, like a reverse Handlebars"
+       },
+       {
+        "_id": "1ca77ba0-d240-b12c-e015-a5fe801154e0",
+        "correct": false,
+        "answer": "An experimental JS implementation from the Google X lab"
+       },
+       {
+        "_id": "2b3a0385-471e-b92d-5587-2ff90f9a5fc8",
+        "correct": false,
+        "answer": "An extension to Javascript that lets us to create React elements"
+       },
+       {
+        "_id": "d92b7bbd-6591-6454-7f26-09d279d6c0b5",
+        "correct": true,
+        "answer": "An extension to Javascript that lets React to create React elements"
+       }
+      ]
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-3317748631",
+     "source": {
+      "name": "Question #5",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "Unlike a normal component, a functional component:",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "1ef9af62-2daf-31a5-ce98-4e05f316cfbe",
+        "correct": false,
+        "answer": "Only uses normal JS functions"
+       },
+       {
+        "_id": "6422545b-8969-f051-ae45-cd37b22d3548",
+        "correct": false,
+        "answer": "Has no state"
+       },
+       {
+        "_id": "6faa1321-a086-7717-d268-81f0686011f4",
+        "correct": false,
+        "answer": "Doesn’t need a render method"
+       },
+       {
+        "_id": "873c86f2-37b4-db69-a955-5bf938ba033f",
+        "correct": true,
+        "answer": "All of the above"
+       }
+      ]
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-2025774576",
+     "source": {
+      "name": "Question #6",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "What is a component tree?",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "c9eb59d6-0bd3-5310-d909-719b0d124f50",
+        "correct": true,
+        "answer": "A representation of our component hierarchy, determined by nested components"
+       },
+       {
+        "_id": "85568c30-0e3f-feac-2e02-8471b097a381",
+        "correct": false,
+        "answer": "A representation of the Virtual DOM, determined by nested components"
+       },
+       {
+        "_id": "5478baae-74b6-f8f0-9874-af12441d4e38",
+        "correct": false,
+        "answer": "A representation of our nested components, determined by the Virtual DOM"
+       },
+       {
+        "_id": "c0113d86-ed50-6d28-5919-100d8659e32b",
+        "correct": false,
+        "answer": "None of the above"
+       }
+      ]
+     }
     }
    ]
-  }
- },
- {
-  "type": "multiple-choice",
-  "taskId": "multiple-choice-2425955338",
-  "source": {
-   "name": "Properties",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "showExpectedAnswer": true,
-   "instructions": "What are Props in React?",
-   "points": "999",
-   "incorrectPoints": "1",
-   "multipleResponse": false,
-   "learningObjectives": "",
-   "answers": [
-    {
-     "_id": "8c29aea8-d753-a93c-ec73-d19c5c5717e0",
-     "correct": false,
-     "answer": "Incorrect answer number 1"
-    },
-    {
-     "_id": "c636ae06-0935-715c-8742-0da0e9eaa697",
-     "correct": true,
-     "answer": "Correct answer"
-    },
-    {
-     "_id": "99e77bab-fe38-bf62-7f63-6f3795f16b2a",
-     "correct": false,
-     "answer": "Incorrect answer number 2"
-    },
-    {
-     "_id": "c8ea1b1e-e3fa-3671-cf65-b36627533ff2",
-     "correct": false,
-     "answer": "Incorrect answer number 3"
-    }
-   ]
-  }
- }
-]

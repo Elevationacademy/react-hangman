@@ -1,23 +1,23 @@
 {
- "name": "Introduction to React",
- "children": [
-  {
-   "title": "Introduction to React",
-   "id": "8727513c-3c9c-0cb1-35a9-bdfe764787a3",
-   "type": "page",
-   "pageId": "8727513c-3c9c-0cb1-35a9-bdfe764787a3"
-  },
-  {
-   "title": "Quiz",
-   "id": "45b40346-cfcb-1d2a-2133-e28143350953",
-   "type": "page",
-   "pageId": "067ab681-0f50-f1b3-c43c-7cc930e85ba7"
-  },
-  {
-   "title": "Exercises",
-   "id": "76f00515-099f-c15e-45a3-f74a0486e5d2",
-   "type": "page",
-   "pageId": "76f00515-099f-c15e-45a3-f74a0486e5d2"
-  }
- ]
-}
+    "name": "Introduction to React",
+    "children": [
+     {
+      "title": "Introduction to React",
+      "id": "8727513c-3c9c-0cb1-35a9-bdfe764787a3",
+      "type": "page",
+      "pageId": "8727513c-3c9c-0cb1-35a9-bdfe764787a3"
+     },
+     {
+      "title": "Quiz",
+      "id": "45b40346-cfcb-1d2a-2133-e28143350953",
+      "type": "page",
+      "pageId": "067ab681-0f50-f1b3-c43c-7cc930e85ba7"
+     },
+     {
+      "title": "Exercises",
+      "id": "76f00515-099f-c15e-45a3-f74a0486e5d2",
+      "type": "page",
+      "pageId": "76f00515-099f-c15e-45a3-f74a0486e5d2"
+     }
+    ]
+   }
