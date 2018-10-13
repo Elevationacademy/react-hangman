@@ -463,3 +463,7 @@ If you comment out your `App` component and place `Banner` in its place (and of 
 See the solution [here](https://codepen.io/ElevationPen/pen/YJQyMY?editors=0010)
 
 You could make the case that so far (and possibly in the exercises) our components could all be functional - and that might be true, but they will become more intricate, so keep them as they are for now (unless otherwise stated) =]
+
+
+
+
