@@ -1,8 +1,14 @@
 [
  {
   "taskId": "test-459438340",
-  "points": 1,
+  "points": 0,
   "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nSelecting a correct letter should increase score by 5\nSelecting an incorrect letter should decrease score by 20\n",
+    "timestamp": 1539456884764,
+    "state": "fail"
+   },
    {
     "code": 0,
     "output": "Well done!",
@@ -25,8 +31,14 @@
  },
  {
   "taskId": "test-3049227058",
-  "points": 1,
+  "points": 0,
   "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nWhen the user has more than 80 points, the Score div should have the \"high-score\" class\nWhen the user has between 50 and 80 points, the Score div should have the \"medium-score\" class\nWhen the user has less than 50 points, the Score div should have the \"low-score\" class\n",
+    "timestamp": 1539456892378,
+    "state": "fail"
+   },
    {
     "code": 0,
     "output": "Well done!",
@@ -49,8 +61,14 @@
  },
  {
   "taskId": "test-614017462",
-  "points": 1,
+  "points": 0,
   "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nThe game should display a Congratulations div with the class \"success-message\" only if the word is guessed correctly\nThe game should display a Game Over div with the class \"game-over\" if the Score is below 0\n",
+    "timestamp": 1539456900265,
+    "state": "fail"
+   },
    {
     "code": 0,
     "output": "Well done!",
@@ -67,8 +85,14 @@
  },
  {
   "taskId": "test-1992838754",
-  "points": 1,
+  "points": 0,
   "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nThe game should have a \"restart game\" button with the class \"restart-button\"\nThe game should provide a new word when clicking the restart button\nThe game should provide a new hint when clicking the restart button\n",
+    "timestamp": 1539456906509,
+    "state": "fail"
+   },
    {
     "code": 0,
     "output": "Well done!",
@@ -79,8 +103,14 @@
  },
  {
   "taskId": "test-1007618148",
-  "points": 1,
+  "points": 999,
   "results": [
+   {
+    "code": 0,
+    "output": "",
+    "timestamp": 1539456912734,
+    "state": "pass"
+   },
    {
     "code": 0,
     "output": "",
