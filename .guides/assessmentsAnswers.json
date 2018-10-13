@@ -1,8 +1,14 @@
 [
  {
   "taskId": "test-3060299803",
-  "points": 1,
+  "points": 0,
   "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nApp should have one Score component in root\n",
+    "timestamp": 1539454318092,
+    "state": "fail"
+   },
    {
     "code": 0,
     "output": "Well done!",
@@ -97,8 +103,14 @@
  },
  {
   "taskId": "test-3401134569",
-  "points": 1,
+  "points": 0,
   "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nApp should have one Letter component under Letters\n",
+    "timestamp": 1539454324166,
+    "state": "fail"
+   },
    {
     "code": 0,
     "output": "Well done!",
