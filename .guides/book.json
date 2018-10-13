@@ -4,20 +4,20 @@
   {
    "title": "React Props, State & Data Flow",
    "id": "34e31df1-8245-bc1a-ef37-a30d14b4706c",
-   "pageId": "34e31df1-8245-bc1a-ef37-a30d14b4706c",
-   "type": "page"
+   "type": "page",
+   "pageId": "34e31df1-8245-bc1a-ef37-a30d14b4706c"
   },
   {
-    "id": "e034d0a9-a676-ea4e-ce0f-a81c8485fa92",
-    "title": "Exercises",
-    "pageId": "5442e315-4597-a75d-0ae6-7eb911232dce",
-    "type": "page"
-   },
+   "title": "Exercises",
+   "id": "e034d0a9-a676-ea4e-ce0f-a81c8485fa92",
+   "type": "page",
+   "pageId": "5442e315-4597-a75d-0ae6-7eb911232dce"
+  },
   {
    "title": "Quiz",
    "id": "56948448-1258-367d-cdfa-8eccf4447413",
-   "pageId": "56948448-1258-367d-cdfa-8eccf4447413",
-   "type": "page"
+   "type": "page",
+   "pageId": "56948448-1258-367d-cdfa-8eccf4447413"
   }
  ]
 }

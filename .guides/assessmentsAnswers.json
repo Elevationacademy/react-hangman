@@ -5,6 +5,12 @@
   "results": [
    {
     "code": 1,
+    "output": "One or more tests failed:\nScore component should have a \"score\" property\nScore component should take value from app.js state\n",
+    "timestamp": 1539454581737,
+    "state": "fail"
+   },
+   {
+    "code": 1,
     "output": "/home/codio/workspace/test-runner.js:5\nconst exec = util.promisify(require('child_process').exec);\n                  ^\n\nTypeError: util.promisify is not a function\n    at Object.<anonymous> (/home/codio/workspace/test-runner.js:5:19)\n    at Module._compile (module.js:577:32)\n    at Object.Module._extensions..js (module.js:586:10)\n    at Module.load (module.js:494:32)\n    at tryModuleLoad (module.js:453:12)\n    at Function.Module._load (module.js:445:3)\n    at Module.runMain (module.js:611:10)\n    at run (bootstrap_node.js:394:7)\n    at startup (bootstrap_node.js:160:9)\n    at bootstrap_node.js:507:3",
     "timestamp": 1534690621521,
     "state": "fail"
@@ -67,8 +73,14 @@
  },
  {
   "taskId": "test-2297084525",
-  "points": 1,
+  "points": 0,
   "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nSolution component should exist directly under App\nSolution component should have a letterStatus prop\nletterStatus should be provided from the App state\nSolution component should have its own State\nSolution component state should have \"word\" and \"hint\" properties\nSolution component should have a div with the class of .hint\nSolution component should render the hint inside a div\n",
+    "timestamp": 1539454587662,
+    "state": "fail"
+   },
    {
     "code": 0,
     "output": "Well done!",
@@ -79,8 +91,14 @@
  },
  {
   "taskId": "test-1184568189",
-  "points": 1,
+  "points": 0,
   "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nSolution component should have a div with that class of .word\nSolution component should display the word from the state object\nSolution component should render the letters in a separate Letter component\n",
+    "timestamp": 1539454593384,
+    "state": "fail"
+   },
    {
     "code": 0,
     "output": "Well done!",
@@ -91,8 +109,14 @@
  },
  {
   "taskId": "test-928620327",
-  "points": 1,
+  "points": 0,
   "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nApp should have a button with a .reduce-button class\nClicking the reduce score button should reduce score by 10\n",
+    "timestamp": 1539454604080,
+    "state": "fail"
+   },
    {
     "code": 0,
     "output": "Well done!",

@@ -70,5 +70,239 @@
    "points": 1,
    "timeoutSeconds": 40
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1285751572",
+  "source": {
+   "name": "Question #1",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "showExpectedAnswer": true,
+   "instructions": "Which component should have a state?",
+   "points": "999",
+   "incorrectPoints": "0",
+   "multipleResponse": false,
+   "learningObjectives": "",
+   "answers": [
+    {
+     "_id": "67ebe3c3-298c-09fa-bfa9-c17e9410b012",
+     "correct": false,
+     "answer": "All components should have state"
+    },
+    {
+     "_id": "bf06646f-de96-6494-1806-beff6d430a8c",
+     "correct": false,
+     "answer": "Generally, only App.js should have state"
+    },
+    {
+     "_id": "0b84ee8f-2b9f-4682-d92c-f793dab3672b",
+     "correct": true,
+     "answer": "The closest common parent component"
+    },
+    {
+     "_id": "f76f7b6b-f006-9da2-5838-f7f2c13049df",
+     "correct": false,
+     "answer": "Any component that displays a lot of data"
+    }
+   ]
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3693823624",
+  "source": {
+   "name": "Question #2",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "showExpectedAnswer": true,
+   "instructions": " Components should...",
+   "points": "999",
+   "incorrectPoints": "0",
+   "multipleResponse": false,
+   "learningObjectives": "",
+   "answers": [
+    {
+     "_id": "96ab77a5-1075-02e8-c9f2-1c3909e1ec5e",
+     "correct": false,
+     "answer": "Know which parent is asking them to do what with the props they receive\n"
+    },
+    {
+     "_id": "212c8bd1-25ce-2b08-04a0-1823a550a67b",
+     "correct": true,
+     "answer": "Be ignorant of their parents"
+    },
+    {
+     "_id": "f93602f1-806b-ad51-50f1-b6cb54854cf6",
+     "correct": false,
+     "answer": "Know who their parent is only if they need to modify its state"
+    },
+    {
+     "_id": "a0171d59-8b7c-20b7-d67d-4c9ed7be7a2d",
+     "correct": false,
+     "answer": "Be ignorant of their children"
+    }
+   ]
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3810331558",
+  "source": {
+   "name": "Question #3",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "showExpectedAnswer": true,
+   "instructions": "Props...",
+   "points": "999",
+   "incorrectPoints": "0",
+   "multipleResponse": false,
+   "learningObjectives": "",
+   "answers": [
+    {
+     "_id": "7e4f5999-d643-bd40-cc8c-e227ede3018f",
+     "correct": false,
+     "answer": "Always come from the parent’s state"
+    },
+    {
+     "_id": "1160fc59-a1ae-5c69-9b34-bff446fe307e",
+     "correct": false,
+     "answer": "Can only be Strings/Numbers/Booleans/Objects/Arrays"
+    },
+    {
+     "_id": "1b0ca81c-7f82-f9a2-0bde-81d5ed5cdb78",
+     "correct": false,
+     "answer": "Do not work in functional components"
+    },
+    {
+     "_id": "135ff7db-61ff-b7c7-c1da-8263250837a0",
+     "correct": true,
+     "answer": "None of the above"
+    }
+   ]
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2379327065",
+  "source": {
+   "name": "Question #4",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "showExpectedAnswer": true,
+   "instructions": "When we talk about Data Flow in React, we say...",
+   "points": "999",
+   "incorrectPoints": "0",
+   "multipleResponse": false,
+   "learningObjectives": "",
+   "answers": [
+    {
+     "_id": "bb289f62-f4e7-e25f-7766-652c43001af4",
+     "correct": false,
+     "answer": "The data should always be in state and stay in the component that has state"
+    },
+    {
+     "_id": "5d09a8ed-8927-c947-a696-f9581a26cf38",
+     "correct": true,
+     "answer": "The data flows down, from a parent to its children components"
+    },
+    {
+     "_id": "f92b9657-a1fc-a8cc-9691-1f66b137ed77",
+     "correct": false,
+     "answer": "The data is easy to find because the Virtual DOM stores it efficiently for us"
+    },
+    {
+     "_id": "6382ee86-9162-73e0-3ec7-93c761a9471f",
+     "correct": false,
+     "answer": "None of the above"
+    }
+   ]
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2394759508",
+  "source": {
+   "name": "Question #5",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "showExpectedAnswer": true,
+   "instructions": "Given the following code (assuming “color” was previously “red”): \n```javascript\n  this.setState({color: \"blue\"})\n  console.log(this.state.color)\n```",
+   "points": "999",
+   "incorrectPoints": "0",
+   "multipleResponse": false,
+   "learningObjectives": "",
+   "answers": [
+    {
+     "_id": "7219fed0-a363-9bfd-d3a4-3656886d3cd5",
+     "correct": false,
+     "answer": "We will see “blue” in the console"
+    },
+    {
+     "_id": "94703f52-f1ea-c8b8-5bd5-bad1e480b808",
+     "correct": false,
+     "answer": "We will probably see “blue” in the console"
+    },
+    {
+     "_id": "57f5a12d-f7c5-2a98-b5fa-630c8a0405f8",
+     "correct": true,
+     "answer": "We might see “blue” in the console"
+    },
+    {
+     "_id": "9c9c3a12-7300-e710-055b-1bd804d4e1db",
+     "correct": false,
+     "answer": "We will definitely see “blue” in the console"
+    }
+   ]
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3070104770",
+  "source": {
+   "name": "Question #6",
+   "showName": true,
+   "bloomsObjectiveLevel": "",
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "showExpectedAnswer": true,
+   "instructions": "What can you say about the following code, assuming each object in foods has a unique name?\n```javascript\n  return(\n    <div>\n      <h1>My Favorite Food</h1>\n      {foods.map(f => <Food name=f.name/>)}\n    </div>\n  )\n```",
+   "points": "999",
+   "incorrectPoints": "0",
+   "multipleResponse": false,
+   "learningObjectives": "",
+   "answers": [
+    {
+     "_id": "1f43cade-ed68-c4ba-ad39-5c48ae112ec2",
+     "correct": false,
+     "answer": "It will not work in functional components"
+    },
+    {
+     "_id": "ce50d2af-bfe3-063b-b499-c5afcfe39a5d",
+     "correct": false,
+     "answer": "It won’t work because you’re mixing normal JSX with a child component "
+    },
+    {
+     "_id": "f75ded29-9828-19a1-b015-363908b9fdf1",
+     "correct": true,
+     "answer": "It will throw a warning about keys"
+    },
+    {
+     "_id": "25cb1f2c-57a9-d4fc-0e31-af2ab505c161",
+     "correct": false,
+     "answer": "It works fine"
+    }
+   ]
+  }
  }
 ]

@@ -13,24 +13,24 @@
    "learningObjectives": ""
   },
   {
-   "id": "56948448-1258-367d-cdfa-8eccf4447413",
-   "title": "Quiz",
-   "files": [],
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/Quiz-5694.md",
-   "chapter": false,
-   "reset": [],
-   "teacherOnly": false,
-   "learningObjectives": ""
-  },
-  {
    "id": "5442e315-4597-a75d-0ae6-7eb911232dce",
    "title": "Exercises",
    "files": [],
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Exercises-5442.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "56948448-1258-367d-cdfa-8eccf4447413",
+   "title": "Quiz",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Quiz-5694.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
