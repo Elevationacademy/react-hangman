@@ -3,25 +3,28 @@
 The things we now know:
 
 *   What components are and how to make them
-*   How to nest components
 
-*   and therefore how to load children components from a parent component
+*   How to nest components
+    *   and therefore how to load children components from a parent component
+    
 
 *   JSX: the unorthodox-but-whatever-it's-the-20th-century marriage of JS and HTML
 *   How to pass data _down_ from a parent to its children
+    *   and how to get that data in the child through `props`
 
-*   and how to get that data in the child through props
 
-*   What state is
+*   What `state` is
+    *   and how to use it as well as `setState`
+    *   and that we can have local `state` as well
 
-*   and how to use it as well as setState
-*   and that we can have local state as well
 
 *   The top-down approach to data flow in React
 
-There are a few more basics to go over before we wrap up React fundamentals. It's important you understand the above before moving forth. So make sure everything is clear, and then let's finish up our React foundation.
+There are a few more basics to go over before we wrap up React fundamentals. It's important you understand the above before moving forth. So make sure everything is clear before moving on.
 
-If you want to make sure you're on track, or just start clean, clone/fork an [updated version of the Hangman code](https://github.com/Elevationacademy/hangman-class/tree/props-and-state) (make sure it's the `props-and-state` branch) with which you should be starting this lesson.
+If you want to make sure you're on track, or just start clean, clone/fork an [updated version of the Hangman code](https://github.com/Elevationacademy/react-hangman/tree/events) (make sure it's the `events` branch) with which you should be starting this lesson. **If you are coding in your own IDE**, remember to copy paste your updated code for the exercises later.
+
+Of course, **you can just keep coding in Codio, as well**.
 
 In this lesson, we will talk about sending data back _up_ the component tree - i.e. from a child back to its parent, or its grand-parent, or its neanderthal ancestor - _up, up, and away!_
 
@@ -54,32 +57,9 @@ Given the following two notes, you should be able to figure out how to pass the 
 ###### Note: you'll have to pass the function down _twice_, from the `App` component to the `Letters` component, and from `Letters` to `Letter`
 
 Tried? Succeeded? Partially succeeded? Didn't quite make it? Wallowed in misery at the deluge of errors?
-Either way, take a look at one possible solution:
+Either way, take a look at [this solution on codepen](https://codepen.io/ElevationPen/pen/pxrGBW?editors=0010).
 
-**App** - pass the function to the Letters component, just like we pass the letterStatus
 
-```javascript
-<Letters letterStatus={this.state.letterStatus} deleteLetter={this.deleteLetter} />
-```
-
-**Letters** - same deal
-
-```javascript
-generateLetterTags(letterStatus){
-    return Object.keys(letterStatus).map(l => {
-        return (<Letter key={l} letter={l} deleteLetter={this.props.deleteLetter} />) //note that we're passing it to *each* letter
-    })
-}
-```
-
-**Letter** - invoke the funtion on click! Just like we originally had with the button code
-
-```javascript
-render() {
-    return (
-        <span onClick={this.props.deleteLetter}>{this.props.letter}</span>
-    );
-```
 
 Hey hey, you've just changed the state from the child! Check it out in the browser - click any letter and watch the first letter dissappear.  
   
@@ -125,8 +105,8 @@ A few things we've done:
 
 *   Changed the **function signature** - the function no longer receives `letterStatus`, but rather it gets it by itself from `props`
 *   Split our `return` to several lines for clarity - this is why we wrap our return value in parentheses, by the way
-
-*   See the section about Automatic Semicolon Insertion in the JS docs [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return) to find out why it wouldn't work otherwise
+    *   See the section about Automatic Semicolon Insertion in the JS docs [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return) to find out why it wouldn't work otherwise
+    
 
 *   Added a `styleClass` property - we will use this inside of `Letter` to determine what styling to give each letter
 
@@ -135,25 +115,14 @@ What we're doing is passing down the `styleClass` property _conditionally_ - tha
 This is why we have a `letterStatus` object! Imagine we only had an array of letters - it would definitely be more complex to determine which `styleClass` to send down.
 
 ###### If you're confused about the **ternary operator** (the question mark syntax), just think of it as a sentene:  
-_Is letterStatus of  _l _true ? If so, send 'selected', otherwise send null_  
+*Is letterStatus of  _l _true ? If so, send 'selected', otherwise send null*  
 Read about about ternary operators [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) if you like.
 
 That means, of course, that we need to receive this new property inside of `Letter` from `props` - we'll get to that in a bit.
 
 In the `Solution` component, you should directly send a `styleClass` of "solutionLetter" - but you should _conditionally_ send the `letter` parameter.
 
-If the `letterStatus` is `true`, send the letter; otherwise, send an underscore space: `"_ "` as a placeholder. Try it out yourself, and see this to make sure you got it:
-
-```javascript
-generateLetterTags() {
-    return this.state.word.split("").map(l =>{
-        return (<Letter 
-        key={l} 
-        styleClass="solutionLetter" 
-        letter={this.props.letterStatus[l] ? l: "_ "} />)
-    })
-}
-```
+If the `letterStatus` is `true`, send the letter; otherwise, send an underscore space: `"_ "` as a placeholder. Try it out yourself, and see [this pen](https://codepen.io/ElevationPen/pen/dgzrbx?editors=0010) to make sure you got it:
 
 Ok, time to get those style classes and do something with them. Into the `Letter` component we go. Checkout this updated `render`:
 
@@ -187,19 +156,11 @@ So first thing's first, we'll want to **change the `deleteLetter` method in `App
 *   It should change the letter's status to `true` inside `letterStatus`
 *   It should call `setState` with the updated object
 
-You've got this!
-
-```javascript
-selectLetter = (letter) => {
-  let letterStatus = {...this.state.letterStatus}
-  letterStatus[letter] = true
-  this.setState({ letterStatus: letterStatus })
-}
-```
+You've got this! See [this pen](https://codepen.io/ElevationPen/pen/Jmyzjz?editors=0010) for a solution to compare.
 
 Next, inside of `Letter`, we don't want to directly call `selectLetter`. We need to call it and pass the selected letter - as per the function signature we just created.
 
-As such, instead of `onClick` calling the method from `props` directly, we'll call an internal method in `Letter`, like so:
+As such, instead of `onClick` calling the method from `props` directly, **we'll call an internal method in `Letter`**, like so:
 
 ```javascript
 class Letter extends Component {
@@ -220,7 +181,7 @@ class Letter extends Component {
 
 So now `onClick` is calling `Letter`'s own `selectLetter` function, which (using `props`) calls the `selectLetter` that was passed down to it from `App`. The Letter method passes the `App` method `this.props.letter`, and bam it's done.
 
-This really is one of the greatest things about using a framework like React. In order to select the letter, we don't have to do any fancy `$("#...)` and find our letter - each `Letter` component represents a letter, and so `this.props.letter` is already targeting our letter for us!
+This really is one of the greatest things about using a library like React. In order to select the letter, we don't have to do any fancy `$("#...)` and find our letter - each `Letter` component represents a letter, and so `this.props.letter` is already targeting our letter for us!
 
 If you remember the flowchart from earlier, it's still pretty similar but with slight modifications:
 
@@ -257,8 +218,8 @@ Here's an overall recap of the app:
 
 *   The `Letter` component calls `selectLetter` when a letter is pressed
 *   The `selectLetter` method changes the status of the selected letter to `true`
+    *   This change occurs through the `setState` function
 
-*   This change occurs through the `setState` function
 
 *   Both `Letters` and `Solution` get updated automatically because `setState` was called
 

@@ -1,316 +1,316 @@
 [
- {
-  "type": "multiple-choice",
-  "taskId": "multiple-choice-1682566459",
-  "source": {
-   "name": "Question 1",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "showExpectedAnswer": true,
-   "instructions": "What is love?",
-   "points": "999",
-   "incorrectPoints": "0",
-   "multipleResponse": false,
-   "learningObjectives": "",
-   "answers": [
     {
-     "_id": "a1e34066-b961-951f-f4a5-570d204fd103",
-     "correct": true,
-     "answer": "Baby don't hurt me no more"
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-1682566459",
+     "source": {
+      "name": "Question 1",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "What is love?",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "a1e34066-b961-951f-f4a5-570d204fd103",
+        "correct": true,
+        "answer": "Baby don't hurt me no more"
+       },
+       {
+        "_id": "4619ffbb-9f81-5a06-6053-83a83e5e3d82",
+        "correct": false,
+        "answer": "Is a temple"
+       }
+      ]
+     }
     },
     {
-     "_id": "4619ffbb-9f81-5a06-6053-83a83e5e3d82",
-     "correct": false,
-     "answer": "Is a temple"
+     "type": "test",
+     "taskId": "test-459438340",
+     "source": {
+      "name": "Exercise 1",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "arePartialPointsAllowed": false,
+      "oneTimeTest": false,
+      "instructions": "Bet you saw this coming; update the score (remember the `Score` component?) we made way back when to actually be functional.\n\nIn particular,\n\n*   For each _wrong_ letter a user selects, decrease the score by 20\n*   For each right letter, increase the score by 5\n\nRemember to **only change the state using `setState`**\n\n**Hint:** If you recall our component tree, you'll see a problem: the secret word is inside `Solution`, but our `score` data is inside `App.js`'s state. There are a few ways to solve this, but either way _you'll probably have to do a bit of refactoring_. Good luck =\\]\n\n**Guided Hint:**\nYou'll have to get rid of the local state in `Solution`, and bring the word + hint up to `App`'s own state",
+      "command": "node .guides/secure/.test/test-runner ex-1",
+      "learningObjectives": "",
+      "points": 1,
+      "timeoutSeconds": 40
+     }
+    },
+    {
+     "type": "test",
+     "taskId": "test-3049227058",
+     "source": {
+      "name": "Exercise 2",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "arePartialPointsAllowed": false,
+      "oneTimeTest": false,
+      "instructions": "Throw some flare in there, conditionally ~\n\n*   So long as the user has 80 points or more, assign the `high-score` class to the `div` with the score\n*   If the user is between 50 and 80 points, assign the `medium-score` class\n*   Below 50 points, the `div` should get the `low-score` class\n\nFeel free to decide how to style each of the classes on your own (we'd go for green-yellow-red colors, but hey, you decide!)\n\nThe _only_ changes should be in the `Score` component and your CSS file.",
+      "command": "node .guides/secure/.test/test-runner ex-2",
+      "learningObjectives": "",
+      "points": 1,
+      "timeoutSeconds": 40
+     }
+    },
+    {
+     "type": "test",
+     "taskId": "test-614017462",
+     "source": {
+      "name": "Exercise 3",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "arePartialPointsAllowed": false,
+      "oneTimeTest": false,
+      "instructions": "End the game!\n\n*   If the user reaches a score of 0, show a `div` with the class `game-over`, and display the word\n*   If the user correctly guesses the word, show a `div` with the class `success-message`\n*   Show the messages **instead** of the game div (the one that contains the `Score`, `Letters` and `Solution` components)\n\n**Hint:** Remember the power of JSX. That means you can have cool JS/X combinations like using `return` in a component's `render` function _conditionally_; i.e. this code is perfectly legitimate:\n\n```javascript\nrender() {\n  if(/*something*/){\n    return <div>some stuff</div>\n  }\n  else{\n    return <p>something else</p>\n  }\n}\n```\nOr better yet:\n```javascript\nrender(){\n  let someStuff = <div>some stuff</div>\n  let somethingElse = <div>something else</div>\n\n  return someCondition ? someStuff: somethingElse\n}\n```\n\nOf course, those are just a couple of ways to do it ;)\n\n**Hint 2:** You're going to be working with a few items in state together: `letterStatus`, `score`, maybe something else you decide - if you run into the problem of your code \"lagging\" (for example, you get to 0 points but it only shows the end-game message at -20 points), recall that **`setState` is asynchronous**. Ideally, you should be able to **find a non-callback solution**\\*.\n\n###### \\*Try updating multiple state properties together instead of one after another\n\n",
+      "command": "node .guides/secure/.test/test-runner ex-3",
+      "learningObjectives": "",
+      "points": 1,
+      "timeoutSeconds": 40
+     }
+    },
+    {
+     "type": "test",
+     "taskId": "test-1992838754",
+     "source": {
+      "name": "Exercise 4",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "arePartialPointsAllowed": false,
+      "oneTimeTest": false,
+      "instructions": "Restart the game!\n\nUpon ending, there should be a button that restarts the game with a <em>new</em> word and hint!\n<ul>\n<li>Words/hints that have already been used should be removed/not used again</li>\n<li>The button should have the class <code>restart-game</code></li>\n</ul>\n\nYou shouldn't have to do anything crazy for this one. Just think about where all the information comes from, work with that, and let React do the rest.",
+      "command": "node .guides/secure/.test/test-runner ex-4",
+      "learningObjectives": "",
+      "points": 1,
+      "timeoutSeconds": 40
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-3513418306",
+     "source": {
+      "name": "Question #1",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "Children components...",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "5631c584-b5fa-d3c2-165b-c4e03351c96c",
+        "correct": false,
+        "answer": "Should only ever display data, and never manipulate anything"
+       },
+       {
+        "_id": "4af1252f-57e3-9f7a-8e13-57c135023d68",
+        "correct": true,
+        "answer": "Can receive methods through props that allow them to manipulate their parent’s data"
+       },
+       {
+        "_id": "a3ac04e4-14ad-6816-3132-724bbf6fd3da",
+        "correct": false,
+        "answer": "Can receive methods through props that allow them to manipulate their parent’s data only if they are normal (not functional) components "
+       },
+       {
+        "_id": "1afc45ce-9296-ac7a-3d5c-428b3af1ff25",
+        "correct": false,
+        "answer": "Can manipulate their parent’s data directly so long as they use `setState`"
+       }
+      ]
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-983675020",
+     "source": {
+      "name": "Question #2",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "When you need to make a small on-hover effect, you should:",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "97f1ba8b-4f59-763a-0b16-0be78d9d6cf4",
+        "correct": false,
+        "answer": "Use jQuery"
+       },
+       {
+        "_id": "7341709c-240d-23b8-7a91-8fbae0b87d21",
+        "correct": false,
+        "answer": "Use onhover"
+       },
+       {
+        "_id": "4a11b065-4a9a-ba84-7296-aadc4defbf65",
+        "correct": true,
+        "answer": "Use onHover"
+       },
+       {
+        "_id": "0eb86561-90b0-1bad-3f3f-4a76260bca2c",
+        "correct": false,
+        "answer": "Add a listener and bind it in the constructor"
+       }
+      ]
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-1163320524",
+     "source": {
+      "name": "Question #3",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "Is it ok to change state inside the render method?",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "b3cb6dbf-0b90-ff20-b038-ed998da48d1a",
+        "correct": false,
+        "answer": "Absolutely"
+       },
+       {
+        "_id": "46903bda-d98f-356e-7e0a-6f49dd5981c3",
+        "correct": false,
+        "answer": "Never"
+       },
+       {
+        "_id": "7908fd78-e103-4637-5a48-97c5dec12460",
+        "correct": true,
+        "answer": "Depends on whether the render renders something that depends on state"
+       },
+       {
+        "_id": "86b087f7-55c5-1c2c-fc37-70186420b53c",
+        "correct": false,
+        "answer": "Depends on whether some other components changes the same property in state"
+       }
+      ]
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-2640850914",
+     "source": {
+      "name": "Question #4",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "The way we pass methods down to child components…",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "5e4923b3-6634-f2ff-d2a5-6707008644c3",
+        "correct": true,
+        "answer": "Is same as passing other data"
+       },
+       {
+        "_id": "917e5bfe-0134-e8df-3ae2-0f84f68e6bed",
+        "correct": false,
+        "answer": "Requires arrow-syntax to bind the method"
+       },
+       {
+        "_id": "1337fa66-9344-a9f3-909a-ebef0df4cd93",
+        "correct": false,
+        "answer": "Depends on whether it is a normal or functional component"
+       },
+       {
+        "_id": "ba73bf15-d984-8fbe-87f8-aee5a318b581",
+        "correct": false,
+        "answer": "Does not need the JSX curly braces, because it’s a class method"
+       }
+      ]
+     }
+    },
+    {
+     "type": "multiple-choice",
+     "taskId": "multiple-choice-3429273757",
+     "source": {
+      "name": "Question #5",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "showExpectedAnswer": true,
+      "instructions": "This code: \n```javascript\n<button onClick={doSomething()}>Do</button>\n```",
+      "points": "999",
+      "incorrectPoints": "0",
+      "multipleResponse": false,
+      "learningObjectives": "",
+      "answers": [
+       {
+        "_id": "99989620-08e6-a5b7-5e89-a277dc1a0b6a",
+        "correct": false,
+        "answer": "Is fine\n"
+       },
+       {
+        "_id": "f884b060-d0d6-d39d-4399-d90c733d44e9",
+        "correct": false,
+        "answer": "Doesn’t need the curly braces"
+       },
+       {
+        "_id": "07a1ca25-0fd0-51a6-eceb-3509356d237e",
+        "correct": false,
+        "answer": "By convention, should be written as DoSomething instead of doSomething"
+       },
+       {
+        "_id": "4dc3cd16-7807-1bcc-b14e-2822fab90076",
+        "correct": true,
+        "answer": "Doesn’t work, need to remove the parentheses"
+       }
+      ]
+     }
+    },
+    {
+     "type": "test",
+     "taskId": "test-1007618148",
+     "source": {
+      "name": "Bonus Exercise",
+      "showName": true,
+      "bloomsObjectiveLevel": "",
+      "guidance": "",
+      "showGuidanceAfterResponse": false,
+      "arePartialPointsAllowed": false,
+      "oneTimeTest": false,
+      "instructions": "Give the user 3 life-lines (only one of each)\n\n1.  Give a free letter\n\n*   Once the user is below 60 points, show a button that will let the user receive a letter for free\n*   You should select the letter randomly from the _remaining_ non-guessed letters\n*   Keep it [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)! Use the `selectLetter` method you already have\n\n3.  Remove a letter that's not in the secret word\n4.  Show a second hint\n\n*   Think about where and how you're going to store this\n\n**Note**: this exercise is not tested automatically. It will always show as passed. ",
+      "command": "",
+      "learningObjectives": "",
+      "points": 999,
+      "timeoutSeconds": 40
+     }
     }
    ]
-  }
- },
- {
-  "type": "test",
-  "taskId": "test-459438340",
-  "source": {
-   "name": "Exercise 1",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "arePartialPointsAllowed": false,
-   "oneTimeTest": false,
-   "instructions": "Bet you saw this coming; update the score (remember the `Score` component?) we made way back when to actually be functional.\n\nIn particular,\n\n*   For each _wrong_ letter a user selects, decrease the score by 20\n*   For each right letter, increase the score by 5\n\nRemember to **only change the state using `setState`**\n\n**Hint:** If you recall our component tree, you'll see a problem: the secret word is inside `Solution`, but our `score` data is inside `App.js`'s state. There are a few ways to solve this, but either way _you'll probably have to do a bit of refactoring_. Good luck =\\]\n\n**Guided Hint:**\nYou'll have to get rid of the local state in `Solution`, and bring the word + hint up to `App`'s own state",
-   "command": "node test-runner ex-1",
-   "learningObjectives": "",
-   "points": 1,
-   "timeoutSeconds": 40
-  }
- },
- {
-  "type": "test",
-  "taskId": "test-3049227058",
-  "source": {
-   "name": "Exercise 2",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "arePartialPointsAllowed": false,
-   "oneTimeTest": false,
-   "instructions": "Throw some flare in there, conditionally ~\n\n*   So long as the user has 80 points or more, assign the `high-score` class to the `div` with the score\n*   If the user is between 50 and 80 points, assign the `medium-score` class\n*   Below 50 points, the `div` should get the `low-score` class\n\nFeel free to decide how to style each of the classes on your own (we'd go for green-yellow-red colors, but hey, you decide!)\n\nThe _only_ changes should be in the `Score` component and your CSS file.",
-   "command": "node test-runner ex-2",
-   "learningObjectives": "",
-   "points": 1,
-   "timeoutSeconds": 40
-  }
- },
- {
-  "type": "test",
-  "taskId": "test-614017462",
-  "source": {
-   "name": "Exercise 3",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "arePartialPointsAllowed": false,
-   "oneTimeTest": false,
-   "instructions": "End the game!\n\n*   If the user reaches a score of 0, show a `div` with the class `game-over`, and display the word\n*   If the user correctly guesses the word, show a `div` with the class `success-message`\n*   Show the messages **instead** of the game div (the one that contains the `Score`, `Letters` and `Solution` components)\n\n**Hint:** Remember the power of JSX. That means you can have cool JS/X combinations like using `return` in a component's `render` function _conditionally_; i.e. this code is perfectly legitimate:\n\n```javascript\nrender() {\n  if(/*something*/){\n    return <div>some stuff</div>\n  }\n  else{\n    return <p>something else</p>\n  }\n}\n```\nOr better yet:\n```javascript\nrender(){\n  let someStuff = <div>some stuff</div>\n  let somethingElse = <div>something else</div>\n\n  return someCondition ? someStuff: somethingElse\n}\n```\n\nOf course, those are just a couple of ways to do it ;)\n\n**Hint 2:** You're going to be working with a few items in state together: `letterStatus`, `score`, maybe something else you decide - if you run into the problem of your code \"lagging\" (for example, you get to 0 points but it only shows the end-game message at -20 points), recall that **`setState` is asynchronous**. Ideally, you should be able to **find a non-callback solution**\\*.\n\n###### \\*Try updating multiple state properties together instead of one after another\n\n",
-   "command": "node test-runner ex-3",
-   "learningObjectives": "",
-   "points": 1,
-   "timeoutSeconds": 40
-  }
- },
- {
-  "type": "test",
-  "taskId": "test-1992838754",
-  "source": {
-   "name": "Exercise 4",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "arePartialPointsAllowed": false,
-   "oneTimeTest": false,
-   "instructions": "Restart the game!\n\nUpon ending, there should be a button that restarts the game with a <em>new</em> word and hint!\n<ul>\n<li>Words/hints that have already been used should be removed/not used again</li>\n<li>The button should have the class <code>restart-game</code></li>\n</ul>\n\nYou shouldn't have to do anything crazy for this one. Just think about where all the information comes from, work with that, and let React do the rest.",
-   "command": "node test-runner ex-4",
-   "learningObjectives": "",
-   "points": 1,
-   "timeoutSeconds": 40
-  }
- },
- {
-  "type": "multiple-choice",
-  "taskId": "multiple-choice-3513418306",
-  "source": {
-   "name": "Question #1",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "showExpectedAnswer": true,
-   "instructions": "Children components...",
-   "points": "999",
-   "incorrectPoints": "0",
-   "multipleResponse": false,
-   "learningObjectives": "",
-   "answers": [
-    {
-     "_id": "5631c584-b5fa-d3c2-165b-c4e03351c96c",
-     "correct": false,
-     "answer": "Should only ever display data, and never manipulate anything"
-    },
-    {
-     "_id": "4af1252f-57e3-9f7a-8e13-57c135023d68",
-     "correct": true,
-     "answer": "Can receive methods through props that allow them to manipulate their parent’s data"
-    },
-    {
-     "_id": "a3ac04e4-14ad-6816-3132-724bbf6fd3da",
-     "correct": false,
-     "answer": "Can receive methods through props that allow them to manipulate their parent’s data only if they are normal (not functional) components "
-    },
-    {
-     "_id": "1afc45ce-9296-ac7a-3d5c-428b3af1ff25",
-     "correct": false,
-     "answer": "Can manipulate their parent’s data directly so long as they use `setState`"
-    }
-   ]
-  }
- },
- {
-  "type": "multiple-choice",
-  "taskId": "multiple-choice-983675020",
-  "source": {
-   "name": "Question #2",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "showExpectedAnswer": true,
-   "instructions": "When you need to make a small on-hover effect, you should:",
-   "points": "999",
-   "incorrectPoints": "0",
-   "multipleResponse": false,
-   "learningObjectives": "",
-   "answers": [
-    {
-     "_id": "97f1ba8b-4f59-763a-0b16-0be78d9d6cf4",
-     "correct": false,
-     "answer": "Use jQuery"
-    },
-    {
-     "_id": "7341709c-240d-23b8-7a91-8fbae0b87d21",
-     "correct": false,
-     "answer": "Use onhover"
-    },
-    {
-     "_id": "4a11b065-4a9a-ba84-7296-aadc4defbf65",
-     "correct": true,
-     "answer": "Use onHover"
-    },
-    {
-     "_id": "0eb86561-90b0-1bad-3f3f-4a76260bca2c",
-     "correct": false,
-     "answer": "Add a listener and bind it in the constructor"
-    }
-   ]
-  }
- },
- {
-  "type": "multiple-choice",
-  "taskId": "multiple-choice-1163320524",
-  "source": {
-   "name": "Question #3",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "showExpectedAnswer": true,
-   "instructions": "Is it ok to change state inside the render method?",
-   "points": "999",
-   "incorrectPoints": "0",
-   "multipleResponse": false,
-   "learningObjectives": "",
-   "answers": [
-    {
-     "_id": "b3cb6dbf-0b90-ff20-b038-ed998da48d1a",
-     "correct": false,
-     "answer": "Absolutely"
-    },
-    {
-     "_id": "46903bda-d98f-356e-7e0a-6f49dd5981c3",
-     "correct": false,
-     "answer": "Never"
-    },
-    {
-     "_id": "7908fd78-e103-4637-5a48-97c5dec12460",
-     "correct": true,
-     "answer": "Depends on whether the render renders something that depends on state"
-    },
-    {
-     "_id": "86b087f7-55c5-1c2c-fc37-70186420b53c",
-     "correct": false,
-     "answer": "Depends on whether some other components changes the same property in state"
-    }
-   ]
-  }
- },
- {
-  "type": "multiple-choice",
-  "taskId": "multiple-choice-2640850914",
-  "source": {
-   "name": "Question #4",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "showExpectedAnswer": true,
-   "instructions": "The way we pass methods down to child components…",
-   "points": "999",
-   "incorrectPoints": "0",
-   "multipleResponse": false,
-   "learningObjectives": "",
-   "answers": [
-    {
-     "_id": "5e4923b3-6634-f2ff-d2a5-6707008644c3",
-     "correct": true,
-     "answer": "Is same as passing other data"
-    },
-    {
-     "_id": "917e5bfe-0134-e8df-3ae2-0f84f68e6bed",
-     "correct": false,
-     "answer": "Requires arrow-syntax to bind the method"
-    },
-    {
-     "_id": "1337fa66-9344-a9f3-909a-ebef0df4cd93",
-     "correct": false,
-     "answer": "Depends on whether it is a normal or functional component"
-    },
-    {
-     "_id": "ba73bf15-d984-8fbe-87f8-aee5a318b581",
-     "correct": false,
-     "answer": "Does not need the JSX curly braces, because it’s a class method"
-    }
-   ]
-  }
- },
- {
-  "type": "multiple-choice",
-  "taskId": "multiple-choice-3429273757",
-  "source": {
-   "name": "Question #5",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "showExpectedAnswer": true,
-   "instructions": "This code: \n```javascript\n<button onClick={doSomething()}>Do</button>\n```",
-   "points": "999",
-   "incorrectPoints": "0",
-   "multipleResponse": false,
-   "learningObjectives": "",
-   "answers": [
-    {
-     "_id": "99989620-08e6-a5b7-5e89-a277dc1a0b6a",
-     "correct": false,
-     "answer": "Is fine\n"
-    },
-    {
-     "_id": "f884b060-d0d6-d39d-4399-d90c733d44e9",
-     "correct": false,
-     "answer": "Doesn’t need the curly braces"
-    },
-    {
-     "_id": "07a1ca25-0fd0-51a6-eceb-3509356d237e",
-     "correct": false,
-     "answer": "By convention, should be written as DoSomething instead of doSomething"
-    },
-    {
-     "_id": "4dc3cd16-7807-1bcc-b14e-2822fab90076",
-     "correct": true,
-     "answer": "Doesn’t work, need to remove the parentheses"
-    }
-   ]
-  }
- },
- {
-  "type": "test",
-  "taskId": "test-1007618148",
-  "source": {
-   "name": "Bonus Exercise",
-   "showName": true,
-   "bloomsObjectiveLevel": "",
-   "guidance": "",
-   "showGuidanceAfterResponse": false,
-   "arePartialPointsAllowed": false,
-   "oneTimeTest": false,
-   "instructions": "Give the user 3 life-lines (only one of each)\n\n1.  Give a free letter\n\n*   Once the user is below 60 points, show a button that will let the user receive a letter for free\n*   You should select the letter randomly from the _remaining_ non-guessed letters\n*   Keep it [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)! Use the `selectLetter` method you already have\n\n3.  Remove a letter that's not in the secret word\n4.  Show a second hint\n\n*   Think about where and how you're going to store this\n\n**Note**: this exercise is not tested automatically. It will always show as passed. ",
-   "command": "",
-   "learningObjectives": "",
-   "points": 999,
-   "timeoutSeconds": 40
-  }
- }
-]

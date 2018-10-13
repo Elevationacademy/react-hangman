@@ -1,49 +1,49 @@
 {
- "sections": [
-  {
-   "id": "46b26db3-579d-071c-a0d4-e7b5e65dce65",
-   "title": "React Events",
-   "files": [],
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/React-Events-46b2.md",
-   "chapter": false,
-   "reset": [],
-   "teacherOnly": false,
-   "learningObjectives": ""
-  },
-  {
-   "id": "86ba9e99-ad27-20d8-b412-7269632c3d41",
-   "title": "Quiz",
-   "files": [],
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/Quiz-86ba.md",
-   "chapter": false,
-   "reset": [],
-   "teacherOnly": false,
-   "learningObjectives": ""
-  },
-  {
-   "id": "3baa1a12-77c6-2ac8-ecee-478305f606d5",
-   "title": "Exercises",
-   "files": [],
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/Exercises-3baa.md",
-   "chapter": false,
-   "reset": [],
-   "teacherOnly": false,
-   "learningObjectives": ""
-  }
- ],
- "theme": "light",
- "scripts": [],
- "lexikonTopic": "",
- "suppressPageNumbering": false,
- "useSubmitButtons": true,
- "useMarkAsComplete": true,
- "hideMenu": false,
- "allowGuideClose": false,
- "collapsedOnStart": false
-}
+    "sections": [
+     {
+      "id": "46b26db3-579d-071c-a0d4-e7b5e65dce65",
+      "title": "React Events",
+      "files": [],
+      "path": [],
+      "type": "markdown",
+      "content-file": ".guides/content/React-Events-46b2.md",
+      "chapter": false,
+      "reset": [],
+      "teacherOnly": false,
+      "learningObjectives": ""
+     },
+     {
+      "id": "86ba9e99-ad27-20d8-b412-7269632c3d41",
+      "title": "Quiz",
+      "files": [],
+      "path": [],
+      "type": "markdown",
+      "content-file": ".guides/content/Quiz-86ba.md",
+      "chapter": false,
+      "reset": [],
+      "teacherOnly": false,
+      "learningObjectives": ""
+     },
+     {
+      "id": "3baa1a12-77c6-2ac8-ecee-478305f606d5",
+      "title": "Exercises",
+      "files": [],
+      "path": [],
+      "type": "markdown",
+      "content-file": ".guides/content/Exercises-3baa.md",
+      "chapter": false,
+      "reset": [],
+      "teacherOnly": false,
+      "learningObjectives": ""
+     }
+    ],
+    "theme": "light",
+    "scripts": [],
+    "lexikonTopic": "",
+    "suppressPageNumbering": false,
+    "useSubmitButtons": true,
+    "useMarkAsComplete": true,
+    "hideMenu": false,
+    "allowGuideClose": false,
+    "collapsedOnStart": false
+   }
