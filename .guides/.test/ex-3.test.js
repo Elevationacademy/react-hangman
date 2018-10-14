@@ -29,7 +29,7 @@ it('Solution component should display the word from the state object', () => {
     const wrapper = mount(<Solution />);
     wrapper.setState({ word: word });
     wrapper.update();
-    expect(wrapper.find('.word').text()).toEqual(word);
+    expect(wrapper.find('.word').text()).toContain(word);
 });
 
 it('Solution component should render the letters in a separate Letter component', () => {
