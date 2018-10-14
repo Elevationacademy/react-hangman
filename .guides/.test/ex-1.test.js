@@ -19,7 +19,7 @@ it('Application should render without crashing', () => {
 });
 
 it('Selecting a correct letter should increase score by 5', () => {
-    const word = 'heythere';
+    const word = 'HEYTHERE';
     const wrapper = mount(<App />);
     wrapper.setState({ word: word });
     wrapper.setState({ score: 0 });
