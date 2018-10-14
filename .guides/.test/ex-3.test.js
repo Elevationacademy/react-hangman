@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import assert from 'assert';
-import App from '../../../src/App';
-import Letters from '../../../src/components/Letters';
-import Letter from '../../../src/components/Letter';
-import Score from '../../../src/components/Score';
-import Solution from '../../../src/components/Solution';
+import App from '../../src/App';
+import Letters from '../../src/components/Letters';
+import Letter from '../../src/components/Letter';
+import Score from '../../src/components/Score';
+import Solution from '../../src/components/Solution';
 import renderer from 'react-test-renderer';
 import { mount, render, shallow, configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';

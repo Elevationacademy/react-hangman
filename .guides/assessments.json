@@ -11,7 +11,7 @@
    "arePartialPointsAllowed": false,
    "oneTimeTest": false,
    "instructions": "Add a score property to App's state with an initial value of 100.\n\nNaturally, you'll want to pass score to the Score component and then render it instead of the hard coded number we've had until now. Don't forget all your curly braces ;}",
-   "command": "node .guides/secure/.test/test-runner ex-1",
+   "command": "node .guides/.test/test-runner ex-1",
    "learningObjectives": "",
    "points": 1,
    "timeoutSeconds": 40
@@ -29,7 +29,7 @@
    "arePartialPointsAllowed": false,
    "oneTimeTest": false,
    "instructions": "Create a Solution component.\n\n*This component is also a child of App\n*It should also receive letterStatus as a parameter\nconsole.log the object to make sure they made it to your component correctly\n*It should have its own local state\n*This works the same way as we did it in this lesson, with the constructor and everything\n*The state should hold two properties: word and hint\n*Render only the hint for now",
-   "command": "node .guides/secure/.test/test-runner ex-2",
+   "command": "node .guides/.test/test-runner ex-2",
    "learningObjectives": "",
    "points": 1,
    "timeoutSeconds": 40
@@ -47,7 +47,7 @@
    "arePartialPointsAllowed": false,
    "oneTimeTest": false,
    "instructions": "Also in the Solution component, render each letter in word - we'll make this invisible for the game later.\n\n*You can still use the map function ;)\n*If you're using the generateLetterTags code again, that's fine\n*Hint: Use split.(\"\") to turn a string into an array\n*Guess what, you can reuse the Letter component for this!",
-   "command": "node .guides/secure/.test/test-runner ex-3",
+   "command": "node .guides/.test/test-runner ex-3",
    "learningObjectives": "",
    "points": 1,
    "timeoutSeconds": 40
@@ -65,7 +65,7 @@
    "arePartialPointsAllowed": false,
    "oneTimeTest": false,
    "instructions": "Create a method (again in App.js for now) that reduces the score by 10. Make sure to use setState, and use a dummy button to test that it works.",
-   "command": "node .guides/secure/.test/test-runner ex-4",
+   "command": "node .guides/.test/test-runner ex-4",
    "learningObjectives": "",
    "points": 1,
    "timeoutSeconds": 40
