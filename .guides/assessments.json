@@ -11,7 +11,7 @@
       "arePartialPointsAllowed": false,
       "oneTimeTest": false,
       "instructions": "Create a `Score` component. It should also be a child of `App` (like `Letters` is), and for now should just display a number.\n\nEventually, we will use this to show the user's score, but for now your page should look like this:\n\n![](https://s3-us-west-2.amazonaws.com/learn-app/lesson-images/react-raw-components.PNG)\n\nCouple of notes:\n\n*   Yes, we swapped the order of Letters and Score in App.js\n*   You may receive an error if you just add the Score tag above Letters\n\n*   The error should be clear, but refer to the part of the lesson about the **render** method if you can't figure it out.\n\n*   This one _can_ (and should) be a functional component",
-      "command": "node .guides/secure/.test/test-runner ex-1",
+      "command": "node .guides/.test/test-runner ex-1",
       "learningObjectives": "",
       "points": 1,
       "timeoutSeconds": 40
@@ -29,7 +29,7 @@
       "arePartialPointsAllowed": false,
       "oneTimeTest": false,
       "instructions": "Now, create a `Letter` (singular) component (still in the `components` directory), and add it inside the _`Letters`_ component's `render` function.\n\nYour page should now look exactly like the above, except with a single letter (any letter, we'll change this soon) underneath the \"Letters will be here\" text.\n\nTrue, nothing miraculous is happening just yet, but components are just the building blocks of React. They're like the HTML of a webpage; alone, they're just placeholders for content.",
-      "command": "node .guides/secure/.test/test-runner ex-2",
+      "command": "node .guides/.test/test-runner ex-2",
       "learningObjectives": "",
       "points": 1,
       "timeoutSeconds": 40

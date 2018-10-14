@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import assert from 'assert';
-import App from '../../../src/App';
-import Letters from '../../../src/components/Letters';
-import Letter from '../../../src/components/Letter';
-import Score from '../../../src/components/Score';
+import App from '../../src/App';
+import Letters from '../../src/components/Letters';
+import Letter from '../../src/components/Letter';
+import Score from '../../src/components/Score';
 import renderer from 'react-test-renderer';
 import { mount, render, shallow, configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
@@ -18,7 +18,7 @@ it('Application should render without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('App should have one Letter component under Letters', () => {
-    const wrapper = shallow(<Letters />);
-    expect(wrapper.find(Letter)).toHaveLength(1);
+it('App should have one Score component in root', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find(Score)).toHaveLength(1); // there must be exactly one Score component
 });
