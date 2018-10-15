@@ -25,7 +25,7 @@ it('Application should render without crashing', () => {
     wrapper.setState({ score: 100 });
     wrapper.update();
     let scoreDiv = wrapper.find(Score).find('div').first();
-    expect(scoreDiv.hasClass(expectedClassName)).toBeTruthy();
+    expect(scoreDiv.prop('className')).toEqual(expectedClassName);
  });
 
  it ('When the user has between 50 and 80 points, the Score div should have the "medium-score" class', () => {
@@ -34,7 +34,7 @@ it('Application should render without crashing', () => {
      wrapper.setState({ score: 60 });
      wrapper.update();
      let scoreDiv = wrapper.find(Score).find('div').first();
-     expect(scoreDiv.hasClass(expectedClassName)).toBeTruthy();
+     expect(scoreDiv.prop('className')).toEqual(expectedClassName);
  })
 
  it('When the user has less than 50 points, the Score div should have the "low-score" class', () => {
@@ -43,7 +43,7 @@ it('Application should render without crashing', () => {
      wrapper.setState({ score: 10 });
      wrapper.update(); 
      let scoreDiv = wrapper.find(Score).find('div').first();
-     expect(scoreDiv.hasClass(expectedClassName)).toBeTruthy();
+     expect(scoreDiv.prop('className')).toEqual(expectedClassName);
  });
 
 
