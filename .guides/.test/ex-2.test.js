@@ -53,10 +53,9 @@ it('Solution component should have a div with the class of .hint', () => {
 
 it('Solution component should render the hint inside a div', () => {
     const hintText = "testhint123";
-    // todo: find out why this gets stuck with mount
-    const wrapper = mount(<Solution />);
-    wrapper.setState({ hint: hintText });
+    const wrapper = mount(<App />);
+    let hintText = wrapper.instance().state.hint;
     let hintDiv = wrapper.find('.hint');
-    expect(hintDiv.text()).toEqual(hintText);
+    expect(hintDiv.text().trim()).toEqual(hintText);
 });
 
