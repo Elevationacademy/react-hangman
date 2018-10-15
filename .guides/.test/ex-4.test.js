@@ -19,25 +19,77 @@ it('Application should render without crashing', () => {
 });
 
 
-it('The game should have a "restart game" button with the class "restart-button"', () => {
+it('When the score is 0 or less, the game should have a "restart game" button with the class "restart-game"', () => {
     const wrapper = mount(<App />);
-    expect(wrapper.find('.restart-game')).toHaveLength(1);
+    wrapper.setState({score: 0})
+    expect(wrapper.find('.restart-game')).toHaveLength(1)
+    
 });
 
-it('The game should provide a new word when clicking the restart button', () => {
+it('When the user selects all the correct letters, the game should have a "restart game" button with the class "restart-game"', () => {
+    const wrapper = mount(<App />);
+    const wordLetters = wrapper.state('word').split("")
+    let letterStatus = {...wrapper.state('letterStatus')}
+    
+    wordLetters.forEach(wl => letterStatus[wl] = true)
+    
+    wrapper.setState({letterStatus})      
+    expect(wrapper.find('.restart-game')).toHaveLength(1)
+
+});
+
+it('When the user selects all the correct letters, the game should provide a new word (in state) when clicking the restart button', () => {
     const wrapper = mount(<App/>);
+
+    const wordLetters = wrapper.state('word').split("")
+    let letterStatus = {...wrapper.state('letterStatus')}
+    wordLetters.forEach(wl => letterStatus[wl] = true)
+    wrapper.setState({letterStatus})
+
     const restartButton = wrapper.find('.restart-game');
     let oldWord = wrapper.state('word');
-    restartButton.simulate('click');
+    restartButton.prop('onClick')()
+
     let newWord = wrapper.state('word');
     expect(oldWord).not.toEqual(newWord);
 });
 
-it('The game should provide a new hint when clicking the restart button', () => {
+it('When the user selects all the correct letters, the game should provide a new hint (in state) when clicking the restart button', () => {
     const wrapper = mount(<App/>);
+
+    const wordLetters = wrapper.state('word').split("")
+    let letterStatus = {...wrapper.state('letterStatus')}
+    wordLetters.forEach(wl => letterStatus[wl] = true)
+    wrapper.setState({letterStatus})
+
     const restartButton = wrapper.find('.restart-game');
-    let oldHint = wrapper.state().hint;
-    restartButton.simulate('click');
-    let newHint = wrapper.state().hint;
-    expect(oldHint).not.toEqual(newHint);
+    let oldWord = wrapper.state('hint');
+    restartButton.prop('onClick')()
+
+    let newWord = wrapper.state('hint');
+    expect(oldWord).not.toEqual(newWord);
+});
+
+it('When the score is 0 or less, the game should provide a new word (in state) when clicking the restart button', () => {
+    const wrapper = mount(<App/>);
+    wrapper.setState({score: 0})
+
+    const restartButton = wrapper.find('.restart-game');
+    let oldWord = wrapper.state('word');
+    restartButton.prop('onClick')()
+
+    let newWord = wrapper.state('word');
+    expect(oldWord).not.toEqual(newWord);
+});
+
+it('When the score is 0 or less, the game should provide a new hint (in state) when clicking the restart button', () => {
+    const wrapper = mount(<App/>);
+    wrapper.setState({score: 0})
+
+    const restartButton = wrapper.find('.restart-game');
+    let oldWord = wrapper.state('hint');
+    restartButton.prop('onClick')()
+
+    let newWord = wrapper.state('hint');
+    expect(oldWord).not.toEqual(newWord);
 });

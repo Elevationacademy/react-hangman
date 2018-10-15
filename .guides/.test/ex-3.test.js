@@ -43,7 +43,7 @@ it('The game should display a Game Over div with the class "game-over" if the Sc
     const word = "HEY";
     const incorrectLetters = ['a', 'b', 'c', 'd', 'f', 'g'];
     const wrapper = mount(<App />);
-    expect(wrapper.find(".error-message")).toHaveLength(0);
+    expect(wrapper.find(".game-over")).toHaveLength(0);
     wrapper.setState({ word: word });
     let allLetters = wrapper.find(Letters).find("span");
     incorrectLetters.forEach((l) => {
@@ -51,6 +51,6 @@ it('The game should display a Game Over div with the class "game-over" if the Sc
        currentLetter.simulate('click');
     });
     wrapper.update();
-    expect(wrapper.find('.error-message')).toHaveLength(1);
+    expect(wrapper.find('.game-over')).toHaveLength(1);
 });
 
