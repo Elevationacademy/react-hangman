@@ -48,6 +48,3 @@ it('Selecting an incorrect letter should decrease score by 20', () => {
     let scoreDiv = wrapper.find(Score).find('div').first();
     expect(scoreDiv.hasClass(expectedClassName));
  });
-
-
-

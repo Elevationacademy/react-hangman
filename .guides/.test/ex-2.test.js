@@ -20,30 +20,27 @@ it('Application should render without crashing', () => {
 
 
  it('When the user has more than 80 points, the Score div should have the "high-score" class', () => {
-    const expectedClassName = 'high-score'; 
+    const expectedClassName = '.high-score'; 
     const wrapper = mount(<App />);
     wrapper.setState({ score: 100 });
     wrapper.update();
-    let scoreDiv = wrapper.find(Score).find('div').first();
-    expect(scoreDiv.prop('className')).toEqual(expectedClassName);
+    expect(wrapper.find(expectedClassName)).toHaveLength(1);
  });
 
  it ('When the user has between 50 and 80 points, the Score div should have the "medium-score" class', () => {
-     const expectedClassName = 'medium-score';
+     const expectedClassName = '.medium-score';
      const wrapper = mount(<App />);
      wrapper.setState({ score: 60 });
      wrapper.update();
-     let scoreDiv = wrapper.find(Score).find('div').first();
-     expect(scoreDiv.prop('className')).toEqual(expectedClassName);
- })
+     expect(wrapper.find(expectedClassName)).toHaveLength(1);
+ });
 
  it('When the user has less than 50 points, the Score div should have the "low-score" class', () => {
-     const expectedClassName = 'low-score';
+     const expectedClassName = '.low-score';
      const wrapper = mount(<App />);
      wrapper.setState({ score: 10 });
      wrapper.update(); 
-     let scoreDiv = wrapper.find(Score).find('div').first();
-     expect(scoreDiv.prop('className')).toEqual(expectedClassName);
+     expect(wrapper.find(expectedClassName)).toHaveLength(1);
  });
 
 
