@@ -23,28 +23,17 @@ it('Selecting a correct letter should increase score by 5', () => {
     const word = wrapper.state('word');
     const score = parseInt(wrapper.state('score'));
     let allLetters = wrapper.find(Letters).find("span");
-    let correctLetterWrapper = allLetters.filterWhere((l) => l.text().toLowerCase() === word[0].toLowerCase());
+    let correctLetterWrapper = allLetters.filterWhere((l) => word.toLowerCase().indexOf(l.text().toLowerCase()) > 0);
     correctLetterWrapper.first().simulate('click');
     expect(parseInt(wrapper.state('score'))).toEqual(parseInt(score+5));
 });
 
 it('Selecting an incorrect letter should decrease score by 20', () => {
-    const word = "someword";
     const wrapper = mount(<App />);
-    wrapper.setState({ word: word });
-    wrapper.setState({ score: 50 });
-    wrapper.update();
+    const word = wrapper.state('word');
+    const score = parseInt(wrapper.state('score'));
     let allLetters = wrapper.find(Letters).find("span");
-    let correctLetterWrapper = allLetters.filterWhere((l) => l.text().toLowerCase() === 'z');
+    let correctLetterWrapper = allLetters.filterWhere((l) => word.toLowerCase().indexOf(l.text().toLowerCase()) < 0);
     correctLetterWrapper.first().simulate('click');
-    expect(wrapper.state('score')).toEqual(30);
- });
-
- it('When the user has more than 80 points, the Score div should have the "high-score" class', () => {
-    const expectedClassName = 'high-score'; 
-    const wrapper = mount(<App />);
-    wrapper.setState({ score: 100 });
-    wrapper.update();
-    let scoreDiv = wrapper.find(Score).find('div').first();
-    expect(scoreDiv.hasClass(expectedClassName));
+    expect(parseInt(wrapper.state('score'))).toEqual(parseInt(score-20));
  });
