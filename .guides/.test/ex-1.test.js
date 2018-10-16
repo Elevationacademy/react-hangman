@@ -19,15 +19,13 @@ it('Application should render without crashing', () => {
 });
 
 it('Selecting a correct letter should increase score by 5', () => {
-    const word = 'HEYTHERE';
     const wrapper = mount(<App />);
-    wrapper.setState({ word: word });
-    wrapper.setState({ score: 0 });
-    wrapper.update();
+    const word = wrapper.state('word');
+    const score = parseInt(wrapper.state('score'));
     let allLetters = wrapper.find(Letters).find("span");
-    let correctLetterWrapper = allLetters.filterWhere((l) => l.text().toLowerCase() ==='h');
+    let correctLetterWrapper = allLetters.filterWhere((l) => l.text().toLowerCase() === word[0].toLowerCase());
     correctLetterWrapper.first().simulate('click');
-    expect(wrapper.state('score')).toEqual(5);
+    expect(parseInt(wrapper.state('score'))).toEqual(parseInt(score+5));
 });
 
 it('Selecting an incorrect letter should decrease score by 20', () => {
