@@ -52,7 +52,7 @@ it('Solution component should have a div with the class of .hint', () => {
 })
 
 it('Solution component should render the hint inside a div', () => {
-    const hintText = "testhint123";
+    // const hintText = "testhint123";
     const wrapper = mount(<App />);
     let hintText = wrapper.instance().state.hint;
     let hintDiv = wrapper.find('.hint');
