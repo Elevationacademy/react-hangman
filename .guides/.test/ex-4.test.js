@@ -75,6 +75,7 @@ it('When the score is 0 or less, the game should provide a new word (in state) w
     wrapper.setState({score: 0})
 
     const restartButton = wrapper.find('.restart-game');
+    // TODO; what happens if students use the words state property for multiple words..
     let oldWord = wrapper.state('word');
     restartButton.prop('onClick')()
 
